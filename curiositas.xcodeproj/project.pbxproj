@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28527928D0FD3700BFF734 /* CuriositasButton.swift */; };
+		0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28527C28D106DF00BFF734 /* PlayViewController.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D28527928D0FD3700BFF734 /* CuriositasButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasButton.swift; sourceTree = "<group>"; };
+		0D28527C28D106DF00BFF734 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D28527B28D106B300BFF734 /* PlayView */ = {
+			isa = PBXGroup;
+			children = (
+				0D28527C28D106DF00BFF734 /* PlayViewController.swift */,
+			);
+			path = PlayView;
+			sourceTree = "<group>";
+		};
 		0DC3654528CFB9A2004350E2 = {
 			isa = PBXGroup;
 			children = (
@@ -113,24 +125,26 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0DC3657028CFBBFB004350E2 /* Home */,
+				0D28527B28D106B300BFF734 /* PlayView */,
+				0DC3657028CFBBFB004350E2 /* HomeView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0DC3657028CFBBFB004350E2 /* Home */ = {
+		0DC3657028CFBBFB004350E2 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
 				0DC3655528CFB9A2004350E2 /* HomeViewController.swift */,
 				0DC3657528CFBFC0004350E2 /* HomeView.swift */,
 				0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */,
 			);
-			path = Home;
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0D28527928D0FD3700BFF734 /* CuriositasButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -224,6 +238,7 @@
 			files = (
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
+				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
@@ -233,6 +248,7 @@
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
+				0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

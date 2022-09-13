@@ -2,19 +2,47 @@
 //  CuriositasButton.swift
 //  curiositas
 //
-//  Created by alexdamascena on 12/09/22.
+//  Created by alexdamascena on 13/09/22.
 //
 
 import UIKit
 
+//struct CuriositasButtonViewModel {
+//    let title: String
+//}
+
+final class CuriositasButtonViewModel {
+  
+    weak var delegate: CuriositasButtonViewModelDelegate?
+    
+}
+
+protocol CuriositasButtonViewModelDelegate: AnyObject {
+    
+    func didUserTap()
+}
+
 class CuriositasButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupButton()
     }
-    */
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupButton(){
+        let configuration = UIButton.Configuration.filled()
+        self.configuration = configuration
+    }
+}
 
+extension CuriositasButton {
+    
+//    func configure(with model: CuriositasButtonViewModel){
+//        self.setTitle(model.title, for: .normal)
+//
+//    }
 }
