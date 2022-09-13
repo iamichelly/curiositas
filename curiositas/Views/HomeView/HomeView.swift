@@ -12,7 +12,7 @@ class HomeView: UIView {
     let imageContainer = UIView()
     let buttonsContainer = UIView()
     
-    weak var delegate: CuriositasButtonViewModelDelegate?
+    weak var delegate: CuriositasButtonDelegate?
     
     let backgroundImage: UIImageView = {
         let image = UIImage(named: ImageConstants.shared.BACKGROUND_IMAGE)
@@ -44,8 +44,7 @@ class HomeView: UIView {
     }
     
     @objc func didTapButton(){
-        print("oi")
-        delegate?.didUserTap()
+        delegate?.didUserTapButton()
     }
 }
 

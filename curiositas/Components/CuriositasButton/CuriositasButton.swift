@@ -7,20 +7,10 @@
 
 import UIKit
 
-//struct CuriositasButtonViewModel {
-//    let title: String
-//}
-
-final class CuriositasButtonViewModel {
-  
-    weak var delegate: CuriositasButtonViewModelDelegate?
-    
+struct CuriositasButtonViewModel {
+    let title: String
 }
 
-protocol CuriositasButtonViewModelDelegate: AnyObject {
-    
-    func didUserTap()
-}
 
 class CuriositasButton: UIButton {
 
@@ -41,8 +31,7 @@ class CuriositasButton: UIButton {
 
 extension CuriositasButton {
     
-//    func configure(with model: CuriositasButtonViewModel){
-//        self.setTitle(model.title, for: .normal)
-//
-//    }
+    func configure(with model: CuriositasButtonViewModel){
+        self.setTitle(model.title, for: .normal)
+    }
 }
