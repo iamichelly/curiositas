@@ -9,35 +9,39 @@ import UIKit
 
 class HomeView: UIView {
     
-    let stackView: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.distribution = .fill
-        stack.spacing = 32
-        stack.alignment = .center
-        return stack
-    }()
-    
     let imageContainer = UIView()
     let buttonsContainer = UIView()
     
     let backgroundImage: UIImageView = {
-        let image = UIImage(named: ConstantsImages.shared.BACKGROUND_IMAGE)
+        let image = UIImage(named: ImageConstants.shared.BACKGROUND_IMAGE)
         return UIImageView(image: image)
     }()
     
     let logo: UIImageView = {
-        let image = UIImage(named: ConstantsImages.shared.LOGO)
+        let image = UIImage(named: ImageConstants.shared.LOGO)
         return UIImageView(image: image)
     }()
+    
+    let playButton = CuriositaButton()
+    let instructionsButton = CuriositaButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
+        instructionsButton.addTarget(self, action: #selector(didTapInstructionButton), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func didTapPlayButton(){
+        print("opa")
+    }
+    
+    @objc func didTapInstructionButton(){
+        print("oi")
     }
 }
 
@@ -45,11 +49,12 @@ extension HomeView: AnyView {
     
     func addSubviews() {
         self.addSubview(backgroundImage)
-        self.addSubview(stackView)
         
-        stackView.addArrangedSubview(imageContainer)
-        stackView.addArrangedSubview(buttonsContainer)
+        self.addSubview(imageContainer)
+        self.addSubview(buttonsContainer)
         
+        buttonsContainer.addSubview(playButton)
+        buttonsContainer.addSubview(instructionsButton)
         imageContainer.addSubview(logo)
     }
     
@@ -62,22 +67,39 @@ extension HomeView: AnyView {
             backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        imageContainer.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            imageContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/2),
+            imageContainer.widthAnchor.constraint(equalTo: self.widthAnchor),
+            imageContainer.topAnchor.constraint(equalTo: topAnchor)
         ])
         
         logo.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            logo.centerXAnchor.constraint(equalTo: imageContainer.centerXAnchor),
-            logo.centerYAnchor.constraint(equalTo: imageContainer.centerYAnchor, constant: -80)
+            logo.bottomAnchor.constraint(equalTo: imageContainer.bottomAnchor, constant: 40),
+            logo.centerXAnchor.constraint(equalTo: imageContainer.centerXAnchor)
         ])
         
         buttonsContainer.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            buttonsContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/2)
+        ])
         
+        playButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            playButton.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 78),
+            playButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            playButton.widthAnchor.constraint(equalToConstant: 221),
+            playButton.heightAnchor.constraint(equalToConstant: 52)
+        ])
         
+        instructionsButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            instructionsButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            instructionsButton.topAnchor.constraint(equalTo: playButton.bottomAnchor, constant: 18),
+            instructionsButton.widthAnchor.constraint(equalToConstant: 221),
+            instructionsButton.heightAnchor.constraint(equalToConstant: 52)
+        ])
     }
 }
+

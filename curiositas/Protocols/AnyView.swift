@@ -21,6 +21,7 @@ extension AnyView {
     func setup(){
         addSubviews()
         setupConstraints()
+        setupAdditionalConfiguration()
     }
     
     func setupAdditionalConfiguration(){}

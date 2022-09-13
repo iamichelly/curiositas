@@ -15,9 +15,12 @@
 		0DC3656128CFB9A3004350E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3655F28CFB9A3004350E2 /* LaunchScreen.storyboard */; };
 		0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3656928CFBB0E004350E2 /* UIView+Preview.swift */; };
 		0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3656B28CFBB41004350E2 /* UIViewController+Preview.swift */; };
-		0DC3657428CFBDD8004350E2 /* ConstantsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657328CFBDD8004350E2 /* ConstantsImages.swift */; };
+		0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657328CFBDD8004350E2 /* ImageConstants.swift */; };
 		0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657528CFBFC0004350E2 /* HomeView.swift */; };
 		0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657828CFC03E004350E2 /* AnyView.swift */; };
+		0DD5526B28D02E8D001FABCA /* CuriositaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */; };
+		0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526C28D03435001FABCA /* ColorConstants.swift */; };
+		0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +34,12 @@
 		0DC3656228CFB9A3004350E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC3656928CFBB0E004350E2 /* UIView+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
 		0DC3656B28CFBB41004350E2 /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
-		0DC3657328CFBDD8004350E2 /* ConstantsImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsImages.swift; sourceTree = "<group>"; };
+		0DC3657328CFBDD8004350E2 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		0DC3657528CFBFC0004350E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0DC3657828CFC03E004350E2 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
+		0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositaButton.swift; sourceTree = "<group>"; };
+		0DD5526C28D03435001FABCA /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+AnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				0DC3655528CFB9A2004350E2 /* HomeViewController.swift */,
 				0DC3657528CFBFC0004350E2 /* HomeView.swift */,
+				0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -133,7 +141,8 @@
 		0DC3657228CFBC6F004350E2 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				0DC3657328CFBDD8004350E2 /* ConstantsImages.swift */,
+				0DC3657328CFBDD8004350E2 /* ImageConstants.swift */,
+				0DD5526C28D03435001FABCA /* ColorConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -216,15 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC3657428CFBDD8004350E2 /* ConstantsImages.swift in Sources */,
+				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
+				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
+				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
+				0DD5526B28D02E8D001FABCA /* CuriositaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

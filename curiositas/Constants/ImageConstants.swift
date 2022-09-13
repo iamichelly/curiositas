@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class ConstantsImages {
+class ImageConstants {
     
-    static let shared = ConstantsImages()
+    static let shared = ImageConstants()
     private init(){}
     
     let BACKGROUND_IMAGE = "home_background"
