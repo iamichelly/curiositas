@@ -18,7 +18,6 @@
 		0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657328CFBDD8004350E2 /* ImageConstants.swift */; };
 		0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657528CFBFC0004350E2 /* HomeView.swift */; };
 		0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657828CFC03E004350E2 /* AnyView.swift */; };
-		0DD5526B28D02E8D001FABCA /* CuriositaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */; };
 		0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526C28D03435001FABCA /* ColorConstants.swift */; };
 		0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +36,6 @@
 		0DC3657328CFBDD8004350E2 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		0DC3657528CFBFC0004350E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0DC3657828CFC03E004350E2 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
-		0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositaButton.swift; sourceTree = "<group>"; };
 		0DD5526C28D03435001FABCA /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+AnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +131,6 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0DD5526A28D02E8D001FABCA /* CuriositaButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,7 +233,6 @@
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
-				0DD5526B28D02E8D001FABCA /* CuriositaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

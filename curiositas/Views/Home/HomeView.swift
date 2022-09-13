@@ -22,26 +22,13 @@ class HomeView: UIView {
         return UIImageView(image: image)
     }()
     
-    let playButton = CuriositaButton()
-    let instructionsButton = CuriositaButton()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
-        instructionsButton.addTarget(self, action: #selector(didTapInstructionButton), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    @objc func didTapPlayButton(){
-        print("opa")
-    }
-    
-    @objc func didTapInstructionButton(){
-        print("oi")
     }
 }
 
@@ -53,8 +40,6 @@ extension HomeView: AnyView {
         self.addSubview(imageContainer)
         self.addSubview(buttonsContainer)
         
-        buttonsContainer.addSubview(playButton)
-        buttonsContainer.addSubview(instructionsButton)
         imageContainer.addSubview(logo)
     }
     
@@ -82,23 +67,10 @@ extension HomeView: AnyView {
         
         buttonsContainer.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            buttonsContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/2)
-        ])
-        
-        playButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            playButton.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 78),
-            playButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            playButton.widthAnchor.constraint(equalToConstant: 221),
-            playButton.heightAnchor.constraint(equalToConstant: 52)
-        ])
-        
-        instructionsButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            instructionsButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            instructionsButton.topAnchor.constraint(equalTo: playButton.bottomAnchor, constant: 18),
-            instructionsButton.widthAnchor.constraint(equalToConstant: 221),
-            instructionsButton.heightAnchor.constraint(equalToConstant: 52)
+            buttonsContainer.leadingAnchor.constraint(equalTo: leadingAnchor),
+            buttonsContainer.trailingAnchor.constraint(equalTo: trailingAnchor),
+            buttonsContainer.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/2),
+            
         ])
     }
 }
