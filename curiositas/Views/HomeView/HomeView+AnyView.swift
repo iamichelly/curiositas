@@ -53,7 +53,7 @@ extension HomeView: AnyView {
         
         playButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            playButton.topAnchor.constraint(equalTo: buttonsContainer.topAnchor, constant: 96),
+            playButton.topAnchor.constraint(equalTo: buttonsContainer.topAnchor, constant: 116),
             playButton.centerXAnchor.constraint(equalTo: buttonsContainer.centerXAnchor),
             playButton.widthAnchor.constraint(equalToConstant: 221),
             playButton.heightAnchor.constraint(equalToConstant: 52)
