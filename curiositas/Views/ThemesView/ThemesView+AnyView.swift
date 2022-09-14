@@ -27,6 +27,9 @@ extension ThemesView: AnyView {
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        questionButton.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func setupAdditionalConfiguration() {
