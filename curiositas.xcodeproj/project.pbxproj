@@ -10,6 +10,10 @@
 		0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28527928D0FD3700BFF734 /* CuriositasButton.swift */; };
 		0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28527C28D106DF00BFF734 /* PlayViewController.swift */; };
 		0D28528028D1331500BFF734 /* CuriositasButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28527F28D1331500BFF734 /* CuriositasButtonDelegate.swift */; };
+		0D28528228D1354300BFF734 /* CuriositasButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28528128D1354300BFF734 /* CuriositasButtonViewModel.swift */; };
+		0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28528528D13C6A00BFF734 /* CuriositasButtonType.swift */; };
+		0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66341E28D14A8100356CDB /* UIFont+.swift */; };
+		0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66342028D1589100356CDB /* CuriositasTitleType.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -29,6 +33,10 @@
 		0D28527928D0FD3700BFF734 /* CuriositasButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasButton.swift; sourceTree = "<group>"; };
 		0D28527C28D106DF00BFF734 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		0D28527F28D1331500BFF734 /* CuriositasButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasButtonDelegate.swift; sourceTree = "<group>"; };
+		0D28528128D1354300BFF734 /* CuriositasButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasButtonViewModel.swift; sourceTree = "<group>"; };
+		0D28528528D13C6A00BFF734 /* CuriositasButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasButtonType.swift; sourceTree = "<group>"; };
+		0D66341E28D14A8100356CDB /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		0D66342028D1589100356CDB /* CuriositasTitleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositasTitleType.swift; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +78,19 @@
 			children = (
 				0D28527928D0FD3700BFF734 /* CuriositasButton.swift */,
 				0D28527F28D1331500BFF734 /* CuriositasButtonDelegate.swift */,
+				0D28528128D1354300BFF734 /* CuriositasButtonViewModel.swift */,
+				0D28528528D13C6A00BFF734 /* CuriositasButtonType.swift */,
+				0D66342028D1589100356CDB /* CuriositasTitleType.swift */,
 			);
 			path = CuriositasButton;
+			sourceTree = "<group>";
+		};
+		0D66341D28D14A3300356CDB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D66341E28D14A8100356CDB /* UIFont+.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		0DC3654528CFB9A2004350E2 = {
@@ -93,6 +112,7 @@
 		0DC3655028CFB9A2004350E2 /* curiositas */ = {
 			isa = PBXGroup;
 			children = (
+				0D66341D28D14A3300356CDB /* Utils */,
 				0DC3657728CFC021004350E2 /* Protocols */,
 				0DC3657228CFBC6F004350E2 /* Constants */,
 				0DC3657128CFBC40004350E2 /* Components */,
@@ -248,14 +268,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
+				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
 				0D28528028D1331500BFF734 /* CuriositasButtonDelegate.swift in Sources */,
+				0D28528228D1354300BFF734 /* CuriositasButtonViewModel.swift in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
+				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
+				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
