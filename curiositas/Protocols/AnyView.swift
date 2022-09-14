@@ -18,7 +18,7 @@ protocol AnyView: AnyObject {
 
 extension AnyView {
     
-    func setup(){
+    func setupView(){
         addSubviews()
         setupConstraints()
         setupAdditionalConfiguration()
