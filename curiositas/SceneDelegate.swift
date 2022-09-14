@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if OnboardingManager.shared.wasSeen {
             viewControllerToShow =  HomeViewController()
         } else {
-            viewControllerToShow = OnboardingViewController()
+            viewControllerToShow = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
         }
         
         let window = UIWindow(windowScene: windowScene)

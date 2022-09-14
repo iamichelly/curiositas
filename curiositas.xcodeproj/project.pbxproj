@@ -19,6 +19,10 @@
 		0D66342928D15E9E00356CDB /* MeetCuriositasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66342828D15E9E00356CDB /* MeetCuriositasView.swift */; };
 		0D66342B28D176B100356CDB /* MeetCuriositasDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66342A28D176B100356CDB /* MeetCuriositasDelegate.swift */; };
 		0D66343428D18B2000356CDB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343328D18B2000356CDB /* OnboardingViewController.swift */; };
+		0D66343628D2310D00356CDB /* Onboarding+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343528D2310D00356CDB /* Onboarding+AnyView.swift */; };
+		0D66343828D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343728D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift */; };
+		0D66343A28D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343928D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift */; };
+		0D66343C28D243D800356CDB /* MeetCuriositasView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343B28D243D800356CDB /* MeetCuriositasView+AnyView.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -47,6 +51,10 @@
 		0D66342828D15E9E00356CDB /* MeetCuriositasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetCuriositasView.swift; sourceTree = "<group>"; };
 		0D66342A28D176B100356CDB /* MeetCuriositasDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetCuriositasDelegate.swift; sourceTree = "<group>"; };
 		0D66343328D18B2000356CDB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		0D66343528D2310D00356CDB /* Onboarding+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Onboarding+AnyView.swift"; sourceTree = "<group>"; };
+		0D66343728D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewController+UIPageViewControllerDataSource.swift"; sourceTree = "<group>"; };
+		0D66343928D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingViewController+UIPageViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		0D66343B28D243D800356CDB /* MeetCuriositasView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetCuriositasView+AnyView.swift"; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 				0D66342628D15E5A00356CDB /* MeetCuriositasViewController.swift */,
 				0D66342828D15E9E00356CDB /* MeetCuriositasView.swift */,
 				0D66342A28D176B100356CDB /* MeetCuriositasDelegate.swift */,
+				0D66343B28D243D800356CDB /* MeetCuriositasView+AnyView.swift */,
 			);
 			path = MeetCuriositas;
 			sourceTree = "<group>";
@@ -125,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				0D66343328D18B2000356CDB /* OnboardingViewController.swift */,
+				0D66343528D2310D00356CDB /* Onboarding+AnyView.swift */,
+				0D66343728D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift */,
+				0D66343928D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -310,13 +322,17 @@
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
+				0D66343628D2310D00356CDB /* Onboarding+AnyView.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
+				0D66343A28D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift in Sources */,
 				0D66342728D15E5A00356CDB /* MeetCuriositasViewController.swift in Sources */,
 				0D66342928D15E9E00356CDB /* MeetCuriositasView.swift in Sources */,
 				0D66342B28D176B100356CDB /* MeetCuriositasDelegate.swift in Sources */,
 				0D66342428D15BA700356CDB /* OnboardingManager.swift in Sources */,
 				0D28528028D1331500BFF734 /* CuriositasButtonDelegate.swift in Sources */,
+				0D66343C28D243D800356CDB /* MeetCuriositasView+AnyView.swift in Sources */,
 				0D28528228D1354300BFF734 /* CuriositasButtonViewModel.swift in Sources */,
+				0D66343828D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
