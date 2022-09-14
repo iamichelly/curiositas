@@ -26,7 +26,7 @@ class OnboardingManager {
     }
     
     func userHasSeenOnboarding(){
-        UserDefaults.standard.set(true, forKey: Constants.KEY)
+        UserDefaults.standard.set(Constants.KEY, forKey: Constants.KEY)
     }
 
 }
