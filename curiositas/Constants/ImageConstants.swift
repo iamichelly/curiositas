@@ -17,6 +17,7 @@ class ImageConstants {
     let LOGO = "logo"
     let MEET_CURIOSITAS = "meet_curiositas_onboarding"
     let SHOW_CARD_GROUP = "show_to_group_onboarding"
+    let CALL_FRIENDS = "call_friends_onboarding"
     
 }
 

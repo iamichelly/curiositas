@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             viewControllerToShow =  HomeViewController()
         } else {
             viewControllerToShow = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+//            viewControllerToShow = CallFriendsViewController()
 //            viewControllerToShow =  HomeViewController()
 //            viewControllerToShow = MeetCuriositasViewController()
         }

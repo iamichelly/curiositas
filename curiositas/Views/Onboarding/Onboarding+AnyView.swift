@@ -22,7 +22,6 @@ extension OnboardingViewController: AnyView {
             pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -28)
         ])
         
-        
         jumpOnboardingLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             jumpOnboardingLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -12),
@@ -31,11 +30,12 @@ extension OnboardingViewController: AnyView {
     }
     
     func setupAdditionalConfiguration() {
-        print("entrou aq")
         pageControl.addTarget(self, action: #selector(didUserTapPageControl), for: .valueChanged)
         setViewControllers([pages[0]], direction: .forward, animated: true)
         pageControl.numberOfPages = pages.count
         
-
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapJumpOnboarding))
+        jumpOnboardingLabel.isUserInteractionEnabled = true
+        jumpOnboardingLabel.addGestureRecognizer(gesture)
     }
 }

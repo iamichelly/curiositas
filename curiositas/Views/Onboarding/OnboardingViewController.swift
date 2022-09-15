@@ -11,7 +11,7 @@ class OnboardingViewController: UIPageViewController {
     
     let pages: [UIViewController] = [
         MeetCuriositasViewController(),
-        MeetCuriositasViewController()
+        CallFriendsViewController()
     ]
     
     let pageControl : UIPageControl = {
@@ -35,9 +35,7 @@ class OnboardingViewController: UIPageViewController {
         dataSource = self
         delegate = self
         setupView()
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapJumpOnboarding))
-        jumpOnboardingLabel.isUserInteractionEnabled = true
-        jumpOnboardingLabel.addGestureRecognizer(gesture)
+
     }
     
     @objc func didUserTapPageControl(_ sender: UIPageControl){

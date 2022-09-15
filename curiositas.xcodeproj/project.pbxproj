@@ -24,6 +24,9 @@
 		0D66343C28D243D800356CDB /* MeetCuriositasView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343B28D243D800356CDB /* MeetCuriositasView+AnyView.swift */; };
 		0D66343F28D2C0C700356CDB /* MeetCuriositasInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66343E28D2C0C700356CDB /* MeetCuriositasInformation.swift */; };
 		0D66344128D2C82100356CDB /* MeetCuriositasCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66344028D2C82100356CDB /* MeetCuriositasCardImage.swift */; };
+		0D66344428D2DDD400356CDB /* CallFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66344328D2DDD400356CDB /* CallFriendsViewController.swift */; };
+		0D66344628D2DE5100356CDB /* CallFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66344528D2DE5100356CDB /* CallFriendsView.swift */; };
+		0D66344928D2DEFF00356CDB /* CallFriendsInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66344828D2DEFF00356CDB /* CallFriendsInformation.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -57,6 +60,9 @@
 		0D66343B28D243D800356CDB /* MeetCuriositasView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetCuriositasView+AnyView.swift"; sourceTree = "<group>"; };
 		0D66343E28D2C0C700356CDB /* MeetCuriositasInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetCuriositasInformation.swift; sourceTree = "<group>"; };
 		0D66344028D2C82100356CDB /* MeetCuriositasCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetCuriositasCardImage.swift; sourceTree = "<group>"; };
+		0D66344328D2DDD400356CDB /* CallFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallFriendsViewController.swift; sourceTree = "<group>"; };
+		0D66344528D2DE5100356CDB /* CallFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallFriendsView.swift; sourceTree = "<group>"; };
+		0D66344828D2DEFF00356CDB /* CallFriendsInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallFriendsInformation.swift; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +158,24 @@
 			path = Containers;
 			sourceTree = "<group>";
 		};
+		0D66344228D2DDAA00356CDB /* CallFriends */ = {
+			isa = PBXGroup;
+			children = (
+				0D66344728D2DEDF00356CDB /* Containers */,
+				0D66344328D2DDD400356CDB /* CallFriendsViewController.swift */,
+				0D66344528D2DE5100356CDB /* CallFriendsView.swift */,
+			);
+			path = CallFriends;
+			sourceTree = "<group>";
+		};
+		0D66344728D2DEDF00356CDB /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				0D66344828D2DEFF00356CDB /* CallFriendsInformation.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 		0DC3654528CFB9A2004350E2 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +240,7 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D66344228D2DDAA00356CDB /* CallFriends */,
 				0D66343228D18AE700356CDB /* Onboarding */,
 				0D66342528D15E2C00356CDB /* MeetCuriositas */,
 				0D28527B28D106B300BFF734 /* PlayView */,
@@ -331,6 +356,7 @@
 			files = (
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
+				0D66344628D2DE5100356CDB /* CallFriendsView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0D66343628D2310D00356CDB /* Onboarding+AnyView.swift in Sources */,
@@ -350,11 +376,13 @@
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
+				0D66344428D2DDD400356CDB /* CallFriendsViewController.swift in Sources */,
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				0D66343428D18B2000356CDB /* OnboardingViewController.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
+				0D66344928D2DEFF00356CDB /* CallFriendsInformation.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
 				0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */,
 			);
