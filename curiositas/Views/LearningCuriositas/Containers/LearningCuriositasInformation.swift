@@ -1,5 +1,5 @@
 //
-//  CallFriendsInformation.swift
+//  LearningCuriositasInformation.swift
 //  curiositas
 //
 //  Created by alexdamascena on 15/09/22.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class CallFriendsInformation: UIView {
+class LearningCuriositasInformation: UIView {
     
-    let callFriends: UILabel = {
+    let learningCuriositas: UILabel = {
         let label = UILabel()
-        label.text = "Jogue com amigos!"
+        label.text = "Aprenda curiosidades!"
         label.font = .rounded(ofSize: 30, weight: .black)
         label.numberOfLines = 0
         label.sizeToFit()
@@ -20,9 +20,9 @@ class CallFriendsInformation: UIView {
         return label
     }()
     
-    let callFriendsDescription: UILabel = {
+    let learningCuriositasDescription: UILabel = {
         let label = UILabel()
-        label.text = "Se divirta com os amigos"
+        label.text = "Enquanto estimula a criatividade fazendo perguntas para descobrir a curiosidade."
         label.font = .rounded(ofSize: 18, weight: .medium)
         label.numberOfLines = 0
         label.sizeToFit()
@@ -30,7 +30,7 @@ class CallFriendsInformation: UIView {
         label.textColor = .white
         return label
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -40,3 +40,5 @@ class CallFriendsInformation: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
