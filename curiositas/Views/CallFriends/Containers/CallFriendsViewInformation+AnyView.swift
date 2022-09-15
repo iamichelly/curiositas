@@ -28,7 +28,7 @@ extension CallFriendsInformation: AnyView {
         NSLayoutConstraint.activate([
             callFriendsDescription.widthAnchor.constraint(equalToConstant: 290),
             callFriendsDescription.centerXAnchor.constraint(equalTo: centerXAnchor),
-            callFriendsDescription.topAnchor.constraint(equalTo: callFriends.bottomAnchor, constant: 64)
+            callFriendsDescription.topAnchor.constraint(equalTo: callFriends.bottomAnchor, constant: 32.VAdapted)
         ])
         
     }

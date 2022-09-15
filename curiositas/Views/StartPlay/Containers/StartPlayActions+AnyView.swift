@@ -19,7 +19,7 @@ extension StartPlayActions: AnyView {
         
         instructionButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            instructionButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -28),
+            instructionButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -40.HAdapted),
             instructionButton.widthAnchor.constraint(equalToConstant: 221),
             instructionButton.heightAnchor.constraint(equalToConstant: 52),
             instructionButton.centerXAnchor.constraint(equalTo: centerXAnchor)
@@ -36,7 +36,7 @@ extension StartPlayActions: AnyView {
         logo.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             logo.bottomAnchor.constraint(equalTo: centerYAnchor, constant: 64),
-            logo.widthAnchor.constraint(equalToConstant: 140),
+            logo.widthAnchor.constraint(equalToConstant: 110.HAdapted),
             logo.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     

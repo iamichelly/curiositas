@@ -26,7 +26,7 @@ extension LearningCuriositasInformation: AnyView {
         NSLayoutConstraint.activate([
             learningCuriositasDescription.widthAnchor.constraint(equalToConstant: 290),
             learningCuriositasDescription.centerXAnchor.constraint(equalTo: centerXAnchor),
-            learningCuriositasDescription.topAnchor.constraint(equalTo: learningCuriositas.bottomAnchor, constant: 64)
+            learningCuriositasDescription.topAnchor.constraint(equalTo: learningCuriositas.bottomAnchor, constant: 32.VAdapted)
         ])
         
     }

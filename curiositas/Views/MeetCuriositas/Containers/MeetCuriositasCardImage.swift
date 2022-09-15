@@ -44,16 +44,16 @@ extension MeetCuriositasCardImage: AnyView {
         
         showToGroupCardImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            showToGroupCardImage.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            showToGroupCardImage.topAnchor.constraint(equalTo: topAnchor),
             showToGroupCardImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            showToGroupCardImage.widthAnchor.constraint(equalToConstant: (UIScreen.main.bounds.width/2.4))
+            showToGroupCardImage.widthAnchor.constraint(equalToConstant: 140.HAdapted)
         ])
         
         showToGroupMainCardImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             showToGroupMainCardImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant:  -16),
-            showToGroupMainCardImage.topAnchor.constraint(equalTo: showToGroupCardImage.topAnchor, constant: 42),
-            showToGroupMainCardImage.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/2.3)
+            showToGroupMainCardImage.topAnchor.constraint(equalTo: showToGroupCardImage.topAnchor, constant: 42.VAdapted),
+            showToGroupMainCardImage.widthAnchor.constraint(equalToConstant: 140.HAdapted)
         ])
     }
     

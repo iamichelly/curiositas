@@ -19,7 +19,7 @@ extension OnboardingViewController: AnyView {
         NSLayoutConstraint.activate([
             pageControl.widthAnchor.constraint(equalTo: view.widthAnchor),
             pageControl.heightAnchor.constraint(equalToConstant: 20),
-            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -28)
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -12)
         ])
         
         jumpOnboardingLabel.translatesAutoresizingMaskIntoConstraints = false
