@@ -44,7 +44,7 @@ extension MeetCuriositasCardImage: AnyView {
         
         showToGroupCardImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            showToGroupCardImage.topAnchor.constraint(equalTo: topAnchor),
+            showToGroupCardImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -32.VAdapted),
             showToGroupCardImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             showToGroupCardImage.widthAnchor.constraint(equalToConstant: 140.HAdapted)
         ])
@@ -52,7 +52,7 @@ extension MeetCuriositasCardImage: AnyView {
         showToGroupMainCardImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             showToGroupMainCardImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant:  -16),
-            showToGroupMainCardImage.topAnchor.constraint(equalTo: showToGroupCardImage.topAnchor, constant: 42.VAdapted),
+            showToGroupMainCardImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 16.VAdapted),
             showToGroupMainCardImage.widthAnchor.constraint(equalToConstant: 140.HAdapted)
         ])
     }
