@@ -14,14 +14,6 @@ class MeetCuriositasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = meetCuriositasView
-        meetCuriositasView.delegate = self
     }
 }
 
-extension MeetCuriositasViewController: MeetCuriositasDelegate {
-    
-    func didUserTapJumpOnboarding() {
-        navigationController?.setViewControllers([HomeViewController()], animated: true)
-        OnboardingManager.shared.userHasSeenOnboarding()
-    }
-}
