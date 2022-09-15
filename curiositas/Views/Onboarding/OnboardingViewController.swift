@@ -16,8 +16,8 @@ class OnboardingViewController: UIPageViewController {
     
     let pageControl : UIPageControl = {
         let page = UIPageControl()
-        page.currentPageIndicatorTintColor = .black
-        page.pageIndicatorTintColor = .systemRed
+        page.currentPageIndicatorTintColor = UIColor(named: ColorConstants.shared.DOT_SELECTED)
+        page.pageIndicatorTintColor = UIColor(named: ColorConstants.shared.DOT)
         page.currentPage = 0
         return page
     }()
