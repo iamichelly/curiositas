@@ -14,6 +14,7 @@ class ThemesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = themesView
+        themesView.setCollectionViewDataSourceDelegate(dataSourceDelegate: self)
 
         // Do any additional setup after loading the view.
     }

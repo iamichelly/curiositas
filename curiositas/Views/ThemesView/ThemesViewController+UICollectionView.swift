@@ -8,14 +8,17 @@
 
 import UIKit
 
-extension ThemesViewController: UICollectionViewDataSource {
+extension ThemesViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return ThemesConstants.shared.THEMES_INFO.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "themesCell", for: indexPath)
-        cell.backgroundColor = .red
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+                    ThemeCell.identifier, for: indexPath) as? ThemeCell else {
+                        fatalError("UICollectionViewCell must be downcasted to ThemeCell")
+                }
+        cell.draw(ThemesConstants.shared.THEMES_INFO[indexPath.row])
         return cell
     }
     
