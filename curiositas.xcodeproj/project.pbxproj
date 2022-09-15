@@ -35,6 +35,8 @@
 		BF6D876028D377C700E34699 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875F28D377C700E34699 /* ThemeModel.swift */; };
 		BF6D876428D3818100E34699 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876328D3818100E34699 /* ThemeCell.swift */; };
 		BF6D876628D381CA00E34699 /* ThemeCell+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876528D381CA00E34699 /* ThemeCell+AnyView.swift */; };
+		BF6D876928D3B9E700E34699 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876828D3B9E700E34699 /* TestViewController.swift */; };
+		BF6D876B28D3BA4F00E34699 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876A28D3BA4F00E34699 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		BF6D875F28D377C700E34699 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
 		BF6D876328D3818100E34699 /* ThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		BF6D876528D381CA00E34699 /* ThemeCell+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeCell+AnyView.swift"; sourceTree = "<group>"; };
+		BF6D876828D3B9E700E34699 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		BF6D876A28D3BA4F00E34699 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF6D876728D3B9D100E34699 /* TestView */,
 				BF6D876128D3808300E34699 /* Cells */,
 				BF6D875128D24C4800E34699 /* ThemesView */,
 				0D28527B28D106B300BFF734 /* PlayView */,
@@ -235,6 +240,15 @@
 				BF6D876528D381CA00E34699 /* ThemeCell+AnyView.swift */,
 			);
 			path = ThemeCell;
+			sourceTree = "<group>";
+		};
+		BF6D876728D3B9D100E34699 /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D876828D3B9E700E34699 /* TestViewController.swift */,
+				BF6D876A28D3BA4F00E34699 /* TestView.swift */,
+			);
+			path = TestView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +337,7 @@
 				BF6D875D28D3776200E34699 /* ThemesConstants.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
+				BF6D876928D3B9E700E34699 /* TestViewController.swift in Sources */,
 				BF6D876028D377C700E34699 /* ThemeModel.swift in Sources */,
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
@@ -330,6 +345,7 @@
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				BF6D876628D381CA00E34699 /* ThemeCell+AnyView.swift in Sources */,
+				BF6D876B28D3BA4F00E34699 /* TestView.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
 				BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */,
 				0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */,

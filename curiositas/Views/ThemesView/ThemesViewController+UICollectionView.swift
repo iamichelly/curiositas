@@ -23,7 +23,8 @@ extension ThemesViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("oi")
+        let playScreen = TestViewController(with: ThemesConstants.shared.THEMES_INFO[indexPath.row])
+        navigationController?.pushViewController(playScreen, animated: false)
     }
     
 }

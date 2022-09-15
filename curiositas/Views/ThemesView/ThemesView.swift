@@ -22,7 +22,7 @@ class ThemesView: UIView {
     let questionButton: UIImageView = {
         let image = UIImageView()
     
-        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 38.0, weight: .bold, scale: .medium)
+        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 38.0, weight: .heavy, scale: .medium)
         let symbol = UIImage(systemName: "questionmark.circle.fill", withConfiguration: symbolConfig)?.withTintColor(UIColor(red: 0.54, green: 0.51, blue: 0.63, alpha: 1.00), renderingMode: .alwaysOriginal)
 
         image.image = symbol
