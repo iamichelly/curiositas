@@ -34,6 +34,13 @@
 		0D66345528D2E5B100356CDB /* LearningCuriositasInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345428D2E5B100356CDB /* LearningCuriositasInformation.swift */; };
 		0D66345728D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345628D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift */; };
 		0D66345928D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345828D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift */; };
+		0D66345C28D2EB3600356CDB /* StartPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345B28D2EB3600356CDB /* StartPlayViewController.swift */; };
+		0D66345E28D2EB4A00356CDB /* StartPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345D28D2EB4A00356CDB /* StartPlayView.swift */; };
+		0D66346028D2EB5C00356CDB /* StartPlayView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66345F28D2EB5C00356CDB /* StartPlayView+AnyView.swift */; };
+		0D66346328D2ECB200356CDB /* StartPlayInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66346228D2ECB200356CDB /* StartPlayInformation.swift */; };
+		0D66346528D2EDE300356CDB /* StartPlayActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66346428D2EDE300356CDB /* StartPlayActions.swift */; };
+		0D66346728D2F5A000356CDB /* StartPlayInformation+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66346628D2F5A000356CDB /* StartPlayInformation+AnyView.swift */; };
+		0D66346928D2F5BA00356CDB /* StartPlayActions+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66346828D2F5BA00356CDB /* StartPlayActions+AnyView.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -77,6 +84,13 @@
 		0D66345428D2E5B100356CDB /* LearningCuriositasInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCuriositasInformation.swift; sourceTree = "<group>"; };
 		0D66345628D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallFriendsViewInformation+AnyView.swift"; sourceTree = "<group>"; };
 		0D66345828D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LearningCuriositasInformation+AnyView.swift"; sourceTree = "<group>"; };
+		0D66345B28D2EB3600356CDB /* StartPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayViewController.swift; sourceTree = "<group>"; };
+		0D66345D28D2EB4A00356CDB /* StartPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayView.swift; sourceTree = "<group>"; };
+		0D66345F28D2EB5C00356CDB /* StartPlayView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartPlayView+AnyView.swift"; sourceTree = "<group>"; };
+		0D66346228D2ECB200356CDB /* StartPlayInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayInformation.swift; sourceTree = "<group>"; };
+		0D66346428D2EDE300356CDB /* StartPlayActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayActions.swift; sourceTree = "<group>"; };
+		0D66346628D2F5A000356CDB /* StartPlayInformation+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartPlayInformation+AnyView.swift"; sourceTree = "<group>"; };
+		0D66346828D2F5BA00356CDB /* StartPlayActions+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartPlayActions+AnyView.swift"; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +226,28 @@
 			path = Containers;
 			sourceTree = "<group>";
 		};
+		0D66345A28D2EB2000356CDB /* StartPlay */ = {
+			isa = PBXGroup;
+			children = (
+				0D66346128D2EC4200356CDB /* Containers */,
+				0D66345B28D2EB3600356CDB /* StartPlayViewController.swift */,
+				0D66345D28D2EB4A00356CDB /* StartPlayView.swift */,
+				0D66345F28D2EB5C00356CDB /* StartPlayView+AnyView.swift */,
+			);
+			path = StartPlay;
+			sourceTree = "<group>";
+		};
+		0D66346128D2EC4200356CDB /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				0D66346228D2ECB200356CDB /* StartPlayInformation.swift */,
+				0D66346628D2F5A000356CDB /* StartPlayInformation+AnyView.swift */,
+				0D66346428D2EDE300356CDB /* StartPlayActions.swift */,
+				0D66346828D2F5BA00356CDB /* StartPlayActions+AnyView.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 		0DC3654528CFB9A2004350E2 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +312,7 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D66345A28D2EB2000356CDB /* StartPlay */,
 				0D66344C28D2E48500356CDB /* LearningCuriositas */,
 				0D66344228D2DDAA00356CDB /* CallFriends */,
 				0D66343228D18AE700356CDB /* Onboarding */,
@@ -392,10 +429,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
+				0D66345C28D2EB3600356CDB /* StartPlayViewController.swift in Sources */,
 				0D66345728D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift in Sources */,
 				0D66345928D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift in Sources */,
+				0D66346528D2EDE300356CDB /* StartPlayActions.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				0D66344628D2DE5100356CDB /* CallFriendsView.swift in Sources */,
+				0D66346928D2F5BA00356CDB /* StartPlayActions+AnyView.swift in Sources */,
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
@@ -404,6 +444,7 @@
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
 				0D66343A28D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift in Sources */,
 				0D66344B28D2E2AF00356CDB /* CallFriendsView+AnyView.swift in Sources */,
+				0D66346028D2EB5C00356CDB /* StartPlayView+AnyView.swift in Sources */,
 				0D66342728D15E5A00356CDB /* MeetCuriositasViewController.swift in Sources */,
 				0D66342928D15E9E00356CDB /* MeetCuriositasView.swift in Sources */,
 				0D66343F28D2C0C700356CDB /* MeetCuriositasInformation.swift in Sources */,
@@ -416,6 +457,7 @@
 				0D66343828D2314B00356CDB /* OnboardingViewController+UIPageViewControllerDataSource.swift in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
+				0D66346328D2ECB200356CDB /* StartPlayInformation.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
 				0D66345028D2E4B300356CDB /* LearningCuriositasView.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
@@ -427,6 +469,8 @@
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				0D66344928D2DEFF00356CDB /* CallFriendsInformation.swift in Sources */,
+				0D66345E28D2EB4A00356CDB /* StartPlayView.swift in Sources */,
+				0D66346728D2F5A000356CDB /* StartPlayInformation+AnyView.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
 				0D28527A28D0FD3700BFF734 /* CuriositasButton.swift in Sources */,
 			);

@@ -12,7 +12,8 @@ class OnboardingViewController: UIPageViewController {
     let pages: [UIViewController] = [
         MeetCuriositasViewController(),
         CallFriendsViewController(),
-        LearningCuriositasViewController()
+        LearningCuriositasViewController(),
+        StartPlayViewController()
     ]
     
     let pageControl : UIPageControl = {
