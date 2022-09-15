@@ -26,6 +26,8 @@ extension OnboardingViewController: AnyView {
         NSLayoutConstraint.activate([
             jumpOnboardingLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: -12),
             jumpOnboardingLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -32),
+            jumpOnboardingLabel.widthAnchor.constraint(equalToConstant: 50),
+            jumpOnboardingLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     

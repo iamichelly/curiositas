@@ -11,7 +11,9 @@ class LearningCuriositasLogo: UIView {
     
     let logo: UIImageView = {
         let image = UIImage(named: ImageConstants.shared.LOGO)
-        return UIImageView(image: image)
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        return imageView
     }()
     
     override init(frame: CGRect) {
@@ -28,7 +30,6 @@ extension LearningCuriositasLogo: AnyView {
     
     func addSubviews() {
         self.addSubview(logo)
-        
     }
     
     func setupConstraints() {
@@ -36,7 +37,7 @@ extension LearningCuriositasLogo: AnyView {
         NSLayoutConstraint.activate([
             logo.widthAnchor.constraint(equalToConstant: 110.HAdapted),
             logo.centerXAnchor.constraint(equalTo: centerXAnchor),
-            logo.topAnchor.constraint(equalTo: topAnchor, constant: 24)
+            logo.topAnchor.constraint(equalTo: topAnchor, constant: 40.VAdapted)
         ])
     }
 }
