@@ -37,6 +37,7 @@
 		BF6D876628D381CA00E34699 /* ThemeCell+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876528D381CA00E34699 /* ThemeCell+AnyView.swift */; };
 		BF6D876928D3B9E700E34699 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876828D3B9E700E34699 /* TestViewController.swift */; };
 		BF6D876B28D3BA4F00E34699 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876A28D3BA4F00E34699 /* TestView.swift */; };
+		BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		BF6D876528D381CA00E34699 /* ThemeCell+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeCell+AnyView.swift"; sourceTree = "<group>"; };
 		BF6D876828D3B9E700E34699 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		BF6D876A28D3BA4F00E34699 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF6D876C28D3C0AA00E34699 /* SFSymbolsButton */,
 				0D28527E28D132EE00BFF734 /* CuriositasButton */,
 			);
 			path = Components;
@@ -249,6 +252,14 @@
 				BF6D876A28D3BA4F00E34699 /* TestView.swift */,
 			);
 			path = TestView;
+			sourceTree = "<group>";
+		};
+		BF6D876C28D3C0AA00E34699 /* SFSymbolsButton */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */,
+			);
+			path = SFSymbolsButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */,
+				BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */,
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				BF6D875B28D2626600E34699 /* ThemesViewController+UICollectionView.swift in Sources */,
