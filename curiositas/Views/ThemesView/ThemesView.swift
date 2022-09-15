@@ -52,16 +52,19 @@ class ThemesView: UIView {
     let themesCollectionViewContainer = UIView()
 
     let themesCollectionView: UICollectionView = {
+        let width = UIScreen.main.bounds.width  - 64
+        let cellSize = width/2 - 6
         let layout = UICollectionViewFlowLayout()
-                layout.scrollDirection = .horizontal
-                layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-                layout.itemSize = CGSize(width: 60, height: 60)
+                layout.scrollDirection = .vertical
+                layout.minimumLineSpacing = 10
+                layout.itemSize = CGSize(width: cellSize, height: cellSize)
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
 
         collectionView.register(ThemeCell.self, forCellWithReuseIdentifier: ThemeCell.identifier)
         return collectionView

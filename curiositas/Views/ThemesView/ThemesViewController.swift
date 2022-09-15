@@ -15,6 +15,8 @@ class ThemesViewController: UIViewController {
         super.viewDidLoad()
         self.view = themesView
         themesView.setCollectionViewDataSourceDelegate(dataSourceDelegate: self)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
 
         // Do any additional setup after loading the view.
     }

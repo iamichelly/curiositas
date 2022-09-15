@@ -22,5 +22,8 @@ extension ThemesViewController: UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("oi")
+    }
     
 }
