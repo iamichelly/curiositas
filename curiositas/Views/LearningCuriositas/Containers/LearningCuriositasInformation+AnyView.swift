@@ -20,7 +20,6 @@ extension LearningCuriositasInformation: AnyView {
             learningCuriositas.widthAnchor.constraint(equalToConstant: 220)
         ])
         
- 
         learningCuriositasDescription.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

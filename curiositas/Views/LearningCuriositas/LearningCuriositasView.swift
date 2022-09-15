@@ -11,10 +11,12 @@ class LearningCuriositasView: UIView {
     
     let background: UIImageView = {
         let image = UIImage(named: ImageConstants.shared.LEARNING_CURIOSITAS)
-        return UIImageView(image: image)
+        let imageView = UIImageView(image: image)
+        return imageView
     }()
     
     let learningCuriositasInformation = LearningCuriositasInformation()
+    let learningCuriositasLogo = LearningCuriositasLogo()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
