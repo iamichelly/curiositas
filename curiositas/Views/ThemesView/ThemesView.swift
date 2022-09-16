@@ -30,17 +30,7 @@ class ThemesView: UIView {
         let label = UILabel()
         label.text = "Temas"
         label.textColor = .white
-        
-        let fontSize: CGFloat = 32
-        let systemFont = UIFont.systemFont(ofSize: fontSize, weight: .heavy)
-        let roundedFont: UIFont
-        if let descriptor = systemFont.fontDescriptor.withDesign(.rounded) {
-           roundedFont = UIFont(descriptor: descriptor, size: fontSize)
-        } else {
-            roundedFont = systemFont
-        }
-
-        label.font = roundedFont
+        label.font = .rounded(ofSize: 32, weight: .heavy)
         return label
     }()
     

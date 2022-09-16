@@ -34,6 +34,6 @@ extension SFSymbolsButton {
     
         buttonImage.image = symbol
         
-        self.backgroundColor = .red
+        self.backgroundColor = UIColor.clear
     }
 }

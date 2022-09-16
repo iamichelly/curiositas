@@ -33,8 +33,8 @@ extension ThemeCell: AnyView {
         cardsAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            cardsAmountLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
-            cardsAmountLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
+            cardsAmountLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.VAdapted),
+            cardsAmountLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12.HAdapted)
         ])
     }
 }
