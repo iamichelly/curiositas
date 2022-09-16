@@ -26,8 +26,8 @@ class SFSymbolsButton: UIButton {
 extension SFSymbolsButton {
     
     func configure(with model: SFSymbolsButtonViewModel){
-        let tintColor = UIColor(red: 0.54, green: 0.51, blue: 0.63, alpha: 1.00)
-        let systemName = "questionmark.circle.fill"
+        let tintColor = model.type == .questionMark ? UIColor(red: 0.54, green: 0.51, blue: 0.63, alpha: 1.00) : .white
+        let systemName = model.type == .questionMark ? "questionmark.circle.fill" : "xmark.circle.fill"
     
         let symbolConfig = UIImage.SymbolConfiguration(pointSize: 38.0, weight: .heavy, scale: .medium)
         let symbol = UIImage(systemName: systemName , withConfiguration: symbolConfig)?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
