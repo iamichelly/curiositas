@@ -8,9 +8,31 @@
 import UIKit
 
 class PlayViewController: UIViewController {
+    
+    let card = CardGame()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.addSubview(card)
+        
+        setupConstraints()
+        
+        card.backgroundColor = .yellow
+    }
+    
+    private func setupConstraints(){
+        
+        card.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            card.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            card.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            card.heightAnchor.constraint(equalToConstant: 450.VAdapted),
+            card.widthAnchor.constraint(equalToConstant: 280.HAdapted)
+        ])
     }
 }

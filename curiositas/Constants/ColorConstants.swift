@@ -16,4 +16,6 @@ class ColorConstants {
     let PRIMARY_COLOR = "primary_color"
     let DOT_SELECTED = "dot_selected"
     let DOT = "dot"
+    let CARD_BACKGROUND = "card_background"
+    
 }
