@@ -7,6 +7,8 @@
 
 import UIKit
 
+typealias UICollectionViewProtocol = UICollectionViewDataSource & UICollectionViewDelegate
+
 class ThemesView: UIView {
     weak var delegate: SFSymbolsButtonDelegate?
 
@@ -71,9 +73,10 @@ class ThemesView: UIView {
     
 }
 
+
 extension ThemesView {
     
-    func setCollectionViewDataSourceDelegate <obj: UICollectionViewDataSource & UICollectionViewDelegate> (
+    func setCollectionViewDataSourceDelegate <obj: UICollectionViewProtocol > (
            dataSourceDelegate: obj) {
            themesCollectionView.dataSource = dataSourceDelegate
            themesCollectionView.delegate = dataSourceDelegate
