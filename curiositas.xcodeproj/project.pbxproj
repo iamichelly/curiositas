@@ -55,6 +55,7 @@
 		0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526C28D03435001FABCA /* ColorConstants.swift */; };
 		0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */; };
 		0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB228D3986400DB3C29 /* Int+.swift */; };
+<<<<<<< HEAD
 		BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875228D24C7100E34699 /* ThemesViewController.swift */; };
 		BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875428D24CA100E34699 /* ThemesView.swift */; };
 		BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */; };
@@ -70,6 +71,9 @@
 		BF6D877228D4B07200E34699 /* SFSymbolsButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */; };
 		BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */; };
 		BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */; };
+=======
+		0DDBDDB528D3E14600DB3C29 /* LearningCuriositasLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB428D3E14600DB3C29 /* LearningCuriositasLogo.swift */; };
+>>>>>>> develop
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +127,7 @@
 		0DD5526C28D03435001FABCA /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+AnyView.swift"; sourceTree = "<group>"; };
 		0DDBDDB228D3986400DB3C29 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		BF6D875228D24C7100E34699 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF6D875428D24CA100E34699 /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
 		BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemesView+AnyView.swift"; sourceTree = "<group>"; };
@@ -138,6 +143,9 @@
 		BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonType.swift; sourceTree = "<group>"; };
 		BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonDelegate.swift; sourceTree = "<group>"; };
 		BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbolsButton+AnyView.swift"; sourceTree = "<group>"; };
+=======
+		0DDBDDB428D3E14600DB3C29 /* LearningCuriositasLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningCuriositasLogo.swift; sourceTree = "<group>"; };
+>>>>>>> develop
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +263,7 @@
 			children = (
 				0D66345428D2E5B100356CDB /* LearningCuriositasInformation.swift */,
 				0D66345828D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift */,
+				0DDBDDB428D3E14600DB3C29 /* LearningCuriositasLogo.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -508,8 +517,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */,
 				BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */,
+=======
+				0DDBDDB528D3E14600DB3C29 /* LearningCuriositasLogo.swift in Sources */,
+>>>>>>> develop
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
 				BF6D877028D4B02500E34699 /* SFSymbolsButtonViewModel.swift in Sources */,
 				0D66345C28D2EB3600356CDB /* StartPlayViewController.swift in Sources */,
@@ -718,6 +731,7 @@
 				INFOPLIST_FILE = curiositas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,7 +743,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -745,6 +759,7 @@
 				INFOPLIST_FILE = curiositas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -756,7 +771,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

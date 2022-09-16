@@ -13,6 +13,7 @@ extension LearningCuriositasView: AnyView {
     func addSubviews() {
         self.addSubview(background)
         self.addSubview(learningCuriositasInformation)
+        self.addSubview(learningCuriositasLogo)
     }
     
     func setupConstraints() {
@@ -30,6 +31,14 @@ extension LearningCuriositasView: AnyView {
             learningCuriositasInformation.leadingAnchor.constraint(equalTo: leadingAnchor),
             learningCuriositasInformation.trailingAnchor.constraint(equalTo: trailingAnchor),
             learningCuriositasInformation.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.3)
+        ])
+        
+        learningCuriositasLogo.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            learningCuriositasLogo.topAnchor.constraint(equalTo: learningCuriositasInformation.bottomAnchor),
+            learningCuriositasLogo.leadingAnchor.constraint(equalTo: leadingAnchor),
+            learningCuriositasLogo.trailingAnchor.constraint(equalTo: trailingAnchor),
+            learningCuriositasLogo.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.7)
         ])
     }
 }
