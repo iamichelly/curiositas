@@ -54,6 +54,7 @@
 		0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657828CFC03E004350E2 /* AnyView.swift */; };
 		0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526C28D03435001FABCA /* ColorConstants.swift */; };
 		0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */; };
+		0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB228D3986400DB3C29 /* Int+.swift */; };
 		BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875228D24C7100E34699 /* ThemesViewController.swift */; };
 		BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875428D24CA100E34699 /* ThemesView.swift */; };
 		BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */; };
@@ -65,7 +66,10 @@
 		BF6D876928D3B9E700E34699 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876828D3B9E700E34699 /* TestViewController.swift */; };
 		BF6D876B28D3BA4F00E34699 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876A28D3BA4F00E34699 /* TestView.swift */; };
 		BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */; };
-		0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB228D3986400DB3C29 /* Int+.swift */; };
+		BF6D877028D4B02500E34699 /* SFSymbolsButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D876F28D4B02500E34699 /* SFSymbolsButtonViewModel.swift */; };
+		BF6D877228D4B07200E34699 /* SFSymbolsButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */; };
+		BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */; };
+		BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +122,7 @@
 		0DC3657828CFC03E004350E2 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
 		0DD5526C28D03435001FABCA /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+AnyView.swift"; sourceTree = "<group>"; };
+		0DDBDDB228D3986400DB3C29 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		BF6D875228D24C7100E34699 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF6D875428D24CA100E34699 /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
 		BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemesView+AnyView.swift"; sourceTree = "<group>"; };
@@ -129,7 +134,10 @@
 		BF6D876828D3B9E700E34699 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		BF6D876A28D3BA4F00E34699 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
-		0DDBDDB228D3986400DB3C29 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		BF6D876F28D4B02500E34699 /* SFSymbolsButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonViewModel.swift; sourceTree = "<group>"; };
+		BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonType.swift; sourceTree = "<group>"; };
+		BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonDelegate.swift; sourceTree = "<group>"; };
+		BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbolsButton+AnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +430,10 @@
 			isa = PBXGroup;
 			children = (
 				BF6D876D28D3C34100E34699 /* SFSymbolsButton.swift */,
+				BF6D876F28D4B02500E34699 /* SFSymbolsButtonViewModel.swift */,
+				BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */,
+				BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */,
+				BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */,
 			);
 			path = SFSymbolsButton;
 			sourceTree = "<group>";
@@ -499,8 +511,10 @@
 				BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */,
 				BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */,
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
+				BF6D877028D4B02500E34699 /* SFSymbolsButtonViewModel.swift in Sources */,
 				0D66345C28D2EB3600356CDB /* StartPlayViewController.swift in Sources */,
 				0D66345728D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift in Sources */,
+				BF6D877228D4B07200E34699 /* SFSymbolsButtonType.swift in Sources */,
 				0D66345928D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift in Sources */,
 				0D66346528D2EDE300356CDB /* StartPlayActions.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
@@ -509,6 +523,7 @@
 				0D66346928D2F5BA00356CDB /* StartPlayActions+AnyView.swift in Sources */,
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
+				BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */,
 				0D66345528D2E5B100356CDB /* LearningCuriositasInformation.swift in Sources */,
@@ -553,6 +568,7 @@
 				0D66343428D18B2000356CDB /* OnboardingViewController.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
+				BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */,
 				0D66344928D2DEFF00356CDB /* CallFriendsInformation.swift in Sources */,
 				0D66345E28D2EB4A00356CDB /* StartPlayView.swift in Sources */,
 				0D66346728D2F5A000356CDB /* StartPlayInformation+AnyView.swift in Sources */,

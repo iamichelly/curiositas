@@ -8,8 +8,15 @@
 import UIKit
 
 class ThemesView: UIView {
+    weak var delegate: SFSymbolsButtonDelegate?
 
-    
+    let questionButton: SFSymbolsButton = {
+        let button = SFSymbolsButton()
+        let model = SFSymbolsButtonViewModel(type: .questionMark)
+        button.configure(with: model)
+        return button
+    }()
+
     let themesStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -17,16 +24,6 @@ class ThemesView: UIView {
         stackView.distribution = .fill
         stackView.spacing = 0
         return stackView
-    }()
-    
-    let questionButton: UIImageView = {
-        let image = UIImageView()
-    
-        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 38.0, weight: .heavy, scale: .medium)
-        let symbol = UIImage(systemName: "questionmark.circle.fill", withConfiguration: symbolConfig)?.withTintColor(UIColor(red: 0.54, green: 0.51, blue: 0.63, alpha: 1.00), renderingMode: .alwaysOriginal)
-
-        image.image = symbol
-        return image
     }()
     
     let titleLabel: UILabel = {
@@ -73,11 +70,18 @@ class ThemesView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        questionButton.addTarget(self, action: #selector(didUserTapQuestionButton), for: .touchUpInside)
+
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+}
+
+extension ThemesView {
     
     func setCollectionViewDataSourceDelegate <obj: UICollectionViewDataSource & UICollectionViewDelegate> (
            dataSourceDelegate: obj) {
@@ -85,4 +89,8 @@ class ThemesView: UIView {
            themesCollectionView.delegate = dataSourceDelegate
            themesCollectionView.reloadData()
        }
+    
+    @objc func didUserTapQuestionButton() {
+        delegate?.didUserTapButton()
+    }
 }
