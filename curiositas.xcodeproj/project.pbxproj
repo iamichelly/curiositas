@@ -49,6 +49,8 @@
 		0D9A3B5828D63ECB00FE4FF7 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5728D63ECB00FE4FF7 /* CloseButton.swift */; };
 		0D9A3B5B28D6701E00FE4FF7 /* TopCardGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5A28D6701E00FE4FF7 /* TopCardGameContainer.swift */; };
 		0D9A3B5D28D6734600FE4FF7 /* TopCardGameContainer+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5C28D6734600FE4FF7 /* TopCardGameContainer+AnyView.swift */; };
+		0D9A3B5F28D673E700FE4FF7 /* BottomCardGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5E28D673E700FE4FF7 /* BottomCardGameContainer.swift */; };
+		0D9A3B6128D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6028D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -126,6 +128,8 @@
 		0D9A3B5728D63ECB00FE4FF7 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		0D9A3B5A28D6701E00FE4FF7 /* TopCardGameContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardGameContainer.swift; sourceTree = "<group>"; };
 		0D9A3B5C28D6734600FE4FF7 /* TopCardGameContainer+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopCardGameContainer+AnyView.swift"; sourceTree = "<group>"; };
+		0D9A3B5E28D673E700FE4FF7 /* BottomCardGameContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardGameContainer.swift; sourceTree = "<group>"; };
+		0D9A3B6028D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BottomCardGameContainer+AnyView.swift"; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 			children = (
 				0D9A3B5A28D6701E00FE4FF7 /* TopCardGameContainer.swift */,
 				0D9A3B5C28D6734600FE4FF7 /* TopCardGameContainer+AnyView.swift */,
+				0D9A3B5E28D673E700FE4FF7 /* BottomCardGameContainer.swift */,
+				0D9A3B6028D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -614,6 +620,7 @@
 				0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */,
 				0D9A3B5028D6366300FE4FF7 /* YellowTitleType.swift in Sources */,
 				0D66345528D2E5B100356CDB /* LearningCuriositasInformation.swift in Sources */,
+				0D9A3B5F28D673E700FE4FF7 /* BottomCardGameContainer.swift in Sources */,
 				0D66343628D2310D00356CDB /* Onboarding+AnyView.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
 				0D66343A28D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift in Sources */,
@@ -646,6 +653,7 @@
 				BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */,
 				0D9A3B5B28D6701E00FE4FF7 /* TopCardGameContainer.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
+				0D9A3B6128D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				BF6D876628D381CA00E34699 /* ThemeCell+AnyView.swift in Sources */,
 				0D9A3B5D28D6734600FE4FF7 /* TopCardGameContainer+AnyView.swift in Sources */,
