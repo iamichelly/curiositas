@@ -69,19 +69,17 @@ class ThemesView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
 }
 
 
 extension ThemesView {
     
-    func setCollectionViewDataSourceDelegate <obj: UICollectionViewProtocol > (
+    func setCollectionViewDataSourceDelegate <obj: UICollectionViewProtocol> (
            dataSourceDelegate: obj) {
            themesCollectionView.dataSource = dataSourceDelegate
            themesCollectionView.delegate = dataSourceDelegate
            themesCollectionView.reloadData()
-       }
+    }
     
     @objc func didUserTapQuestionButton() {
         delegate?.didUserTapButton()

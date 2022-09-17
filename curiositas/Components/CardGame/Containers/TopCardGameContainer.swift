@@ -8,11 +8,17 @@
 import UIKit
 
 class TopCardGameContainer: UIView {
-    
-    let closeButton = CloseButton()
+        
     let curiosity = YellowTitle(withText: .curiosity)
     let tips = YellowTitle(withText: .tips)
     let tip = CommonTextCard(withText: "Maior")
+    
+    let closeButton: SFSymbolsButton = {
+        let button = SFSymbolsButton()
+        let model = SFSymbolsButtonViewModel(type: .close)
+        button.configure(with: model)
+        return button
+    }()
     
     let carousel: UIStackView = {
         let stack = UIStackView()
