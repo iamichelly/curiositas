@@ -8,6 +8,11 @@
 import UIKit
 
 class TopCardGameContainer: UIView {
+    
+    struct Constants {
+        static let ARROW_LEFT = "chevron.left"
+        static let ARROW_RIGHT = "chevron.right"
+    }
         
     let curiosity = YellowTitle(withText: .curiosity)
     let tips = YellowTitle(withText: .tips)
@@ -39,7 +44,7 @@ class TopCardGameContainer: UIView {
     }()
     
     let beforeIcon: UIImageView = {
-        let image = UIImage(systemName: "chevron.left")
+        let image = UIImage(systemName: Constants.ARROW_LEFT)
         let imageView = UIImageView(image: image)
         imageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
@@ -47,7 +52,7 @@ class TopCardGameContainer: UIView {
     }()
     
     let nextIcon: UIImageView = {
-        let image = UIImage(systemName: "chevron.right")
+        let image = UIImage(systemName: Constants.ARROW_RIGHT)
         let imageView = UIImageView(image: image)
         imageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)

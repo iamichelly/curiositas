@@ -8,6 +8,7 @@
 import UIKit
 
 extension BottomCardGameContainer: AnyView {
+    
     func addSubviews() {
         self.addSubview(checkView)
         self.addSubview(keyWords)
