@@ -16,8 +16,8 @@ class CardGame: UIView {
         stack.axis = .vertical
         return stack
     }()
-    
-    let topView = UIView()
+        
+    let topCardGameContainer = TopCardGameContainer()
     let bottomView = UIView()
     
     let checkView = UIView()
@@ -27,28 +27,6 @@ class CardGame: UIView {
     let keyWords = YellowTitle(withText: .keyWords)
     let firstGroup = CommonTextCard(withText: "Time 1: Vulcão")
     let secondGroup = CommonTextCard(withText: "Time 2: Marte")
-    
-    let curiosity = YellowTitle(withText: .curiosity)
-    
-    let curiosityDescription: UITextView = {
-        let label = UITextView()
-        label.textAlignment = .center
-        label.font = .rounded(ofSize: 20, weight: .semibold)
-        label.textColor = .white
-        label.text = "O maior vulcão do Sistema Solar fica em Marte"
-        label.backgroundColor = .clear
-        return label
-    }()
-    
-    let closeButton = CloseButton()
-    
-    let carousel: UIStackView = {
-        let stack = UIStackView()
-        stack.alignment = .fill
-        stack.spacing = 24
-        stack.axis = .horizontal
-        return stack
-    }()
 
     let markAsDoneLabel: UILabel = {
         let label = UILabel()
@@ -57,7 +35,7 @@ class CardGame: UIView {
         label.text = "Marcar como concluído"
         return label
     }()
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -74,16 +52,9 @@ extension CardGame: AnyView {
         
         self.addSubview(cardStack)
         
-        cardStack.addArrangedSubview(topView)
+        cardStack.addArrangedSubview(topCardGameContainer)
         cardStack.addArrangedSubview(bottomView)
-        
-        topView.addSubview(closeButton)
-        topView.addSubview(curiosity)
-        topView.addSubview(curiosityDescription)
-        
-        topView.addSubview(carousel)
-        
-        
+
         bottomView.addSubview(checkView)
         bottomView.addSubview(keyWords)
         bottomView.addSubview(firstGroup)
@@ -91,7 +62,6 @@ extension CardGame: AnyView {
         
         checkView.addSubview(checkbox)
         checkView.addSubview(markAsDoneLabel)
-        
     }
     
     func setupConstraints() {
@@ -129,7 +99,7 @@ extension CardGame: AnyView {
         
         keyWords.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            keyWords.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: 16.VAdapted),
+            keyWords.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: 24.VAdapted),
             keyWords.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor),
             keyWords.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
             keyWords.heightAnchor.constraint(equalToConstant: 40)
@@ -150,44 +120,26 @@ extension CardGame: AnyView {
             secondGroup.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
             secondGroup.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
-        closeButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            closeButton.topAnchor.constraint(equalTo: topView.topAnchor, constant: 16.VAdapted),
-            closeButton.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -16.HAdapted),
-            closeButton.heightAnchor.constraint(equalToConstant: 38),
-            closeButton.widthAnchor.constraint(equalToConstant: 38)
-        ])
-        
-        curiosity.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            curiosity.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 16.VAdapted),
-            curiosity.leadingAnchor.constraint(equalTo: topView.leadingAnchor),
-            curiosity.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
-            curiosity.heightAnchor.constraint(equalToConstant: 40)
-        ])
-        
-        curiosityDescription.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            curiosityDescription.topAnchor.constraint(equalTo: curiosity.bottomAnchor, constant: 8.VAdapted),
-            curiosityDescription.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 16.HAdapted),
-            curiosityDescription.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -16.HAdapted),
-            curiosityDescription.heightAnchor.constraint(equalToConstant: 48.VAdapted)
-        ])
-        
-        carousel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            carousel.topAnchor.constraint(equalTo: curiosityDescription.bottomAnchor, constant: 18.VAdapted),
-            carousel.leadingAnchor.constraint(equalTo: topView.leadingAnchor),
-            carousel.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
-            carousel.heightAnchor.constraint(equalToConstant: 60)
-        ])
-        
-        carousel.backgroundColor = .yellow
     }
     
     func setupAdditionalConfiguration() {
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 32        
+        self.layer.cornerRadius = 32
+        
+//        let gestureBefore = UITapGestureRecognizer(target: self, action: #selector(didTapBeforeArrow))
+//        beforeIcon.isUserInteractionEnabled = true
+//        beforeIcon.addGestureRecognizer(gestureBefore)
+        
+//        let gestureNext = UITapGestureRecognizer(target: self , action: #selector(didTapNextArrow))
+//        nextIcon.isUserInteractionEnabled = true
+//        nextIcon.addGestureRecognizer(gestureNext)
+    }
+    
+    @objc func didTapBeforeArrow(){
+//        self.tip.text = "outra palavra"
+    }
+    
+    @objc func didTapNextArrow(){
+//        self.tip.text = "voltou"
     }
 }
