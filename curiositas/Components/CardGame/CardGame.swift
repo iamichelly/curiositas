@@ -24,7 +24,7 @@ class CardGame: UIView {
     
     let checkbox = Checkbox()
     
-    let knowledge = YellowTitle(withText: .curiosity)
+    let knowledge = YellowTitle(withText: .keyWords)
 
     let markAsDoneLabel: UILabel = {
         let label = UILabel()
