@@ -10,21 +10,24 @@ import UIKit
 class PlayViewController: UIViewController {
     
     let card = CardGame()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        addSubviews()
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    @objc func didTapCheckBox(){
+        print("oi")
+    }
+
+    func addSubviews(){
         self.view.addSubview(card)
-        
         setupConstraints()
-        
-        card.backgroundColor = .yellow
+        card.backgroundColor = .purple
     }
     
+
     private func setupConstraints(){
         
         card.translatesAutoresizingMaskIntoConstraints = false
@@ -36,3 +39,5 @@ class PlayViewController: UIViewController {
         ])
     }
 }
+
+

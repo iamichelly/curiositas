@@ -20,6 +20,7 @@ class ImageConstants {
     let CALL_FRIENDS = "call_friends_onboarding"
     let LEARNING_CURIOSITAS = "learning_curiositas_onboarding"
     let START_PLAY = "start_play_onboarding"
+    let CARD_BACKGROUND = "card"
     
 }
 
