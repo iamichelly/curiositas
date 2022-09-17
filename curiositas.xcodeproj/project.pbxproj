@@ -364,6 +364,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0DDBDDCC28D632F000DB3C29 /* YellowTitle */,
 				0DDBDDC928D55EF300DB3C29 /* Checkbox */,
 				0DDBDDC628D50ECA00DB3C29 /* CardGame */,
 				BF6D876C28D3C0AA00E34699 /* SFSymbolsButton */,
@@ -404,6 +405,13 @@
 				0DDBDDCA28D55F1100DB3C29 /* Checkbox.swift */,
 			);
 			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		0DDBDDCC28D632F000DB3C29 /* YellowTitle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YellowTitle;
 			sourceTree = "<group>";
 		};
 		BF6D875128D24C4800E34699 /* ThemesView */ = {

@@ -30,6 +30,10 @@ class CardGame: UIView {
         label.font = .rounded(ofSize: 24, weight: .black)
         label.textColor = .brown
         label.textAlignment = .center
+        label.layer.shadowColor = UIColor.black.cgColor
+        label.layer.shadowOffset = CGSize(width: 0, height: 2)
+        label.layer.masksToBounds = false
+        label.layer.shadowOpacity = 0.25
         return label
     }()
 
