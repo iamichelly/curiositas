@@ -12,6 +12,7 @@ class CommonTextCard: UITextField {
     init(withText text: String){
         super.init(frame: .zero)
         self.text = text
+        setupView()
     }
     
     override init(frame: CGRect) {

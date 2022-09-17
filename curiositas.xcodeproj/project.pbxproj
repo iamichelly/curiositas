@@ -46,6 +46,7 @@
 		0D9A3B5028D6366300FE4FF7 /* YellowTitleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B4F28D6366300FE4FF7 /* YellowTitleType.swift */; };
 		0D9A3B5228D6386500FE4FF7 /* CommonTextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5128D6386500FE4FF7 /* CommonTextCard.swift */; };
 		0D9A3B5528D6394D00FE4FF7 /* CommonTextCard+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5428D6394D00FE4FF7 /* CommonTextCard+AnyView.swift */; };
+		0D9A3B5828D63ECB00FE4FF7 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5728D63ECB00FE4FF7 /* CloseButton.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -120,6 +121,7 @@
 		0D9A3B4F28D6366300FE4FF7 /* YellowTitleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowTitleType.swift; sourceTree = "<group>"; };
 		0D9A3B5128D6386500FE4FF7 /* CommonTextCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextCard.swift; sourceTree = "<group>"; };
 		0D9A3B5428D6394D00FE4FF7 /* CommonTextCard+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommonTextCard+AnyView.swift"; sourceTree = "<group>"; };
+		0D9A3B5728D63ECB00FE4FF7 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +319,14 @@
 			path = CommonTextCard;
 			sourceTree = "<group>";
 		};
+		0D9A3B5628D63E9C00FE4FF7 /* CloseButton */ = {
+			isa = PBXGroup;
+			children = (
+				0D9A3B5728D63ECB00FE4FF7 /* CloseButton.swift */,
+			);
+			path = CloseButton;
+			sourceTree = "<group>";
+		};
 		0DC3654528CFB9A2004350E2 = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +403,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0D9A3B5628D63E9C00FE4FF7 /* CloseButton */,
 				0D9A3B5328D6386900FE4FF7 /* CommonTextCard */,
 				0D9A3B4A28D6344A00FE4FF7 /* YellowTitle */,
 				0DDBDDC928D55EF300DB3C29 /* Checkbox */,
@@ -574,6 +585,7 @@
 				0D66345728D2E5EA00356CDB /* CallFriendsViewInformation+AnyView.swift in Sources */,
 				BF6D877228D4B07200E34699 /* SFSymbolsButtonType.swift in Sources */,
 				0D66345928D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift in Sources */,
+				0D9A3B5828D63ECB00FE4FF7 /* CloseButton.swift in Sources */,
 				0D66346528D2EDE300356CDB /* StartPlayActions.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				0DDBDDC828D50F3500DB3C29 /* CardGame.swift in Sources */,
@@ -794,7 +806,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -822,7 +834,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

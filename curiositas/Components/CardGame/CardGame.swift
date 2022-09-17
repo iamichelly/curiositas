@@ -24,7 +24,13 @@ class CardGame: UIView {
     
     let checkbox = Checkbox()
     
-    let knowledge = YellowTitle(withText: .keyWords)
+    let keyWords = YellowTitle(withText: .keyWords)
+    let firstGroup = CommonTextCard(withText: "Time 1: Vulcão")
+    let secondGroup = CommonTextCard(withText: "Time 2: Marte")
+    
+    let curiosity = YellowTitle(withText: .curiosity)
+    
+    let closeButton = CloseButton()
 
     let markAsDoneLabel: UILabel = {
         let label = UILabel()
@@ -53,10 +59,14 @@ extension CardGame: AnyView {
         cardStack.addArrangedSubview(topView)
         cardStack.addArrangedSubview(bottomView)
         
+        topView.addSubview(closeButton)
+        topView.addSubview(curiosity)
+        
         
         bottomView.addSubview(checkView)
-        bottomView.addSubview(knowledge)
-//        bottomView.addSubview(knowledgeView)
+        bottomView.addSubview(keyWords)
+        bottomView.addSubview(firstGroup)
+        bottomView.addSubview(secondGroup)
         
         checkView.addSubview(checkbox)
         checkView.addSubview(markAsDoneLabel)
@@ -96,17 +106,45 @@ extension CardGame: AnyView {
             markAsDoneLabel.centerYAnchor.constraint(equalTo: checkView.centerYAnchor)
         ])
         
-        knowledge.translatesAutoresizingMaskIntoConstraints = false
+        keyWords.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            knowledge.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: 16.VAdapted),
-            knowledge.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor),
-            knowledge.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
-            knowledge.heightAnchor.constraint(equalToConstant: 40)
+            keyWords.topAnchor.constraint(equalTo: bottomView.topAnchor, constant: 16.VAdapted),
+            keyWords.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor),
+            keyWords.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
+            keyWords.heightAnchor.constraint(equalToConstant: 40)
         ])
         
-        bottomView.backgroundColor = .yellow
-        checkView.backgroundColor = .purple
-    
+        firstGroup.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            firstGroup.topAnchor.constraint(equalTo: keyWords.bottomAnchor, constant: 16.VAdapted),
+            firstGroup.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor),
+            firstGroup.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
+            firstGroup.heightAnchor.constraint(equalToConstant: 40)
+        ])
+        
+        secondGroup.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            secondGroup.topAnchor.constraint(equalTo: firstGroup.bottomAnchor, constant: 8.VAdapted),
+            secondGroup.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor),
+            secondGroup.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor),
+            secondGroup.heightAnchor.constraint(equalToConstant: 50)
+        ])
+        
+        closeButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            closeButton.topAnchor.constraint(equalTo: topView.topAnchor, constant: 16.VAdapted),
+            closeButton.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -16.HAdapted),
+            closeButton.heightAnchor.constraint(equalToConstant: 38),
+            closeButton.widthAnchor.constraint(equalToConstant: 38)
+        ])
+        
+        curiosity.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            curiosity.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 16.VAdapted),
+            curiosity.leadingAnchor.constraint(equalTo: topView.leadingAnchor),
+            curiosity.trailingAnchor.constraint(equalTo: topView.trailingAnchor),
+            curiosity.heightAnchor.constraint(equalToConstant: 40)
+        ])
     }
     
     func setupAdditionalConfiguration() {
