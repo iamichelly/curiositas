@@ -17,5 +17,6 @@ class ColorConstants {
     let DOT_SELECTED = "dot_selected"
     let DOT = "dot"
     let CHECKBOX = "checkbox"
+    let YELLOW = "yellow"
 
 }
