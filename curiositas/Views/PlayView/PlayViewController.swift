@@ -14,20 +14,16 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        card.delegate = self
         addSubviews()
     }
     
-    @objc func didTapCheckBox(){
-        print("oi")
-    }
-
     func addSubviews(){
         self.view.addSubview(card)
         setupConstraints()
         card.backgroundColor = .purple
     }
     
-
     private func setupConstraints(){
         
         card.translatesAutoresizingMaskIntoConstraints = false
@@ -37,6 +33,13 @@ class PlayViewController: UIViewController {
             card.heightAnchor.constraint(equalToConstant: 450.VAdapted),
             card.widthAnchor.constraint(equalToConstant: 280.HAdapted)
         ])
+    }
+}
+
+extension PlayViewController: CheckboxDelegate {
+    
+    func didUserTapCheckbox() {
+        print("oi")
     }
 }
 

@@ -51,6 +51,8 @@
 		0D9A3B5F28D673E700FE4FF7 /* BottomCardGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B5E28D673E700FE4FF7 /* BottomCardGameContainer.swift */; };
 		0D9A3B6128D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6028D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift */; };
 		0D9A3B6328D675F100FE4FF7 /* CardGame+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6228D675F100FE4FF7 /* CardGame+AnyView.swift */; };
+		0D9A3B6528D7865500FE4FF7 /* Checkbox+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6428D7865500FE4FF7 /* Checkbox+AnyView.swift */; };
+		0D9A3B6728D7867200FE4FF7 /* CheckboxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6628D7867200FE4FF7 /* CheckboxDelegate.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -130,6 +132,8 @@
 		0D9A3B5E28D673E700FE4FF7 /* BottomCardGameContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardGameContainer.swift; sourceTree = "<group>"; };
 		0D9A3B6028D6759E00FE4FF7 /* BottomCardGameContainer+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BottomCardGameContainer+AnyView.swift"; sourceTree = "<group>"; };
 		0D9A3B6228D675F100FE4FF7 /* CardGame+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardGame+AnyView.swift"; sourceTree = "<group>"; };
+		0D9A3B6428D7865500FE4FF7 /* Checkbox+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Checkbox+AnyView.swift"; sourceTree = "<group>"; };
+		0D9A3B6628D7867200FE4FF7 /* CheckboxDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxDelegate.swift; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -456,6 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				0DDBDDCA28D55F1100DB3C29 /* Checkbox.swift */,
+				0D9A3B6428D7865500FE4FF7 /* Checkbox+AnyView.swift */,
+				0D9A3B6628D7867200FE4FF7 /* CheckboxDelegate.swift */,
 			);
 			path = Checkbox;
 			sourceTree = "<group>";
@@ -624,6 +630,7 @@
 				0D9A3B4E28D6353800FE4FF7 /* YellowTitle+AnyView.swift in Sources */,
 				0D66344128D2C82100356CDB /* MeetCuriositasCardImage.swift in Sources */,
 				0D66344E28D2E4A500356CDB /* LearningCuriositasViewController.swift in Sources */,
+				0D9A3B6528D7865500FE4FF7 /* Checkbox+AnyView.swift in Sources */,
 				0D28528028D1331500BFF734 /* CuriositasButtonDelegate.swift in Sources */,
 				0D66343C28D243D800356CDB /* MeetCuriositasView+AnyView.swift in Sources */,
 				0D28528228D1354300BFF734 /* CuriositasButtonViewModel.swift in Sources */,
@@ -631,6 +638,7 @@
 				0D9A3B5528D6394D00FE4FF7 /* CommonTextCard+AnyView.swift in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				BF6D876428D3818100E34699 /* ThemeCell.swift in Sources */,
+				0D9A3B6728D7867200FE4FF7 /* CheckboxDelegate.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
 				0D66346328D2ECB200356CDB /* StartPlayInformation.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,

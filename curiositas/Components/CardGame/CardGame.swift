@@ -8,6 +8,15 @@
 import UIKit
 
 class CardGame: UIView {
+    
+    let topCardGameContainer = TopCardGameContainer()
+    let bottomCardGameContainer = BottomCardGameContainer()
+    
+    weak var delegate: CheckboxDelegate? {
+        didSet {
+            bottomCardGameContainer.delegate = delegate
+        }
+    }
 
     let cardStack: UIStackView = {
         let stack = UIStackView()
@@ -16,9 +25,6 @@ class CardGame: UIView {
         stack.axis = .vertical
         return stack
     }()
-        
-    let topCardGameContainer = TopCardGameContainer()
-    let bottomCardGameContainer = BottomCardGameContainer()
         
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -10,27 +10,20 @@ import UIKit
 extension BottomCardGameContainer: AnyView {
     
     func addSubviews() {
-        self.addSubview(checkView)
         self.addSubview(keyWords)
         self.addSubview(firstGroup)
         self.addSubview(secondGroup)
-
-        checkView.addSubview(checkbox)
-        checkView.addSubview(markAsDoneLabel)
+        
+        self.addSubview(checkbox)
+        self.addSubview(markAsDoneLabel)
     }
     
     func setupConstraints() {
-        checkView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            checkView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32.VAdapted),
-            checkView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            checkView.trailingAnchor.constraint(equalTo: trailingAnchor),
-        ])
         
         checkbox.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            checkbox.centerYAnchor.constraint(equalTo: checkView.centerYAnchor),
-            checkbox.leadingAnchor.constraint(equalTo: checkView.leadingAnchor, constant: 38),
+            checkbox.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24.VAdapted),
+            checkbox.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 38),
             checkbox.heightAnchor.constraint(equalToConstant: 24),
             checkbox.widthAnchor.constraint(equalToConstant: 24)
         ])
@@ -39,7 +32,7 @@ extension BottomCardGameContainer: AnyView {
         NSLayoutConstraint.activate([
             markAsDoneLabel.heightAnchor.constraint(equalTo: checkbox.heightAnchor),
             markAsDoneLabel.leadingAnchor.constraint(equalTo: checkbox.trailingAnchor, constant: 8),
-            markAsDoneLabel.centerYAnchor.constraint(equalTo: checkView.centerYAnchor)
+            markAsDoneLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24.VAdapted)
         ])
         
         keyWords.translatesAutoresizingMaskIntoConstraints = false
@@ -65,5 +58,9 @@ extension BottomCardGameContainer: AnyView {
             secondGroup.trailingAnchor.constraint(equalTo: trailingAnchor),
             secondGroup.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    func setupAdditionalConfiguration() {
+        checkbox.addTarget(self, action: #selector(didTapCheckBox), for: .touchUpInside)
     }
 }

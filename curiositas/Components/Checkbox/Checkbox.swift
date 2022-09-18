@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Checkbox: UIView {
+class Checkbox: UIButton {
     
     private var isChecked = true
     
@@ -22,7 +22,7 @@ class Checkbox: UIView {
         super.init(frame: frame)
         setupView()
     }
-    
+        
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -34,27 +34,5 @@ class Checkbox: UIView {
 }
 
 
-extension Checkbox: AnyView {
-    
-    func addSubviews() {
-        self.addSubview(checked)
-    }
-    
-    func setupConstraints() {
-        checked.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            checked.centerXAnchor.constraint(equalTo: centerXAnchor),
-            checked.centerYAnchor.constraint(equalTo: centerYAnchor),
-            checked.heightAnchor.constraint(equalToConstant: 20),
-            checked.widthAnchor.constraint(equalToConstant: 20)
-        ])
-    }
-    
-    func setupAdditionalConfiguration() {
-        self.backgroundColor = UIColor(named: ColorConstants.shared.CHECKBOX)
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 4
-        checked.isHidden = true
-    }
-    
-}
+
+

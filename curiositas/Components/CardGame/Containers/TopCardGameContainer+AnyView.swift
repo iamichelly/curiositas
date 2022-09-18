@@ -64,4 +64,14 @@ extension TopCardGameContainer: AnyView {
             carousel.heightAnchor.constraint(equalToConstant: 24)
         ])
     }
+    
+    func setupAdditionalConfiguration() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapBeforeButton))
+        beforeIcon.isUserInteractionEnabled = true
+        beforeIcon.addGestureRecognizer(gesture)
+    }
+    
+    @objc func didTapBeforeButton(){
+        print("oi")
+    }
 }
