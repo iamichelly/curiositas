@@ -27,6 +27,10 @@
 		0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3657828CFC03E004350E2 /* AnyView.swift */; };
 		0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526C28D03435001FABCA /* ColorConstants.swift */; };
 		0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */; };
+		EB8D47E428D2461900648865 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47E328D2461900648865 /* CardStackView.swift */; };
+		EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47E528D2462900648865 /* CardStackViewController.swift */; };
+		EB8D47EA28D24F5000648865 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47E928D24F5000648865 /* Card.swift */; };
+		EB8D47EC28D25F2E00648865 /* CardStackView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47EB28D25F2E00648865 /* CardStackView+AnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		0DC3657828CFC03E004350E2 /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
 		0DD5526C28D03435001FABCA /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		0DD5526E28D036E9001FABCA /* HomeView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+AnyView.swift"; sourceTree = "<group>"; };
+		EB8D47E328D2461900648865 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		EB8D47E528D2462900648865 /* CardStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackViewController.swift; sourceTree = "<group>"; };
+		EB8D47E928D24F5000648865 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EB8D47EB28D25F2E00648865 /* CardStackView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardStackView+AnyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB8D47E228D2460A00648865 /* CardStackView */,
 				0D28527B28D106B300BFF734 /* PlayView */,
 				0DC3657028CFBBFB004350E2 /* HomeView */,
 			);
@@ -175,6 +184,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EB8D47E828D24F4700648865 /* Card */,
 				0D28527E28D132EE00BFF734 /* CuriositasButton */,
 			);
 			path = Components;
@@ -195,6 +205,24 @@
 				0DC3657828CFC03E004350E2 /* AnyView.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EB8D47E228D2460A00648865 /* CardStackView */ = {
+			isa = PBXGroup;
+			children = (
+				EB8D47E328D2461900648865 /* CardStackView.swift */,
+				EB8D47E528D2462900648865 /* CardStackViewController.swift */,
+				EB8D47EB28D25F2E00648865 /* CardStackView+AnyView.swift */,
+			);
+			path = CardStackView;
+			sourceTree = "<group>";
+		};
+		EB8D47E828D24F4700648865 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				EB8D47E928D24F5000648865 /* Card.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +300,9 @@
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
+				EB8D47E428D2461900648865 /* CardStackView.swift in Sources */,
 				0D28528028D1331500BFF734 /* CuriositasButtonDelegate.swift in Sources */,
+				EB8D47EC28D25F2E00648865 /* CardStackView+AnyView.swift in Sources */,
 				0D28528228D1354300BFF734 /* CuriositasButtonViewModel.swift in Sources */,
 				0DD5526F28D036E9001FABCA /* HomeView+AnyView.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
@@ -281,6 +311,8 @@
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
+				EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */,
+				EB8D47EA28D24F5000648865 /* Card.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				0DC3657928CFC03E004350E2 /* AnyView.swift in Sources */,
@@ -423,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4UVYB4V5UN;
+				DEVELOPMENT_TEAM = 9FWLTGWA8V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = curiositas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

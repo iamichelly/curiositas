@@ -21,8 +21,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController: CuriositasButtonDelegate {
     
     func didUserTapButton() {
-        let playScreen = PlayViewController()
-        navigationController?.pushViewController(playScreen, animated: true)
+        let cardStackScreen = CardStackViewController()
+        navigationController?.pushViewController(cardStackScreen, animated: true)
     }
 }
 
