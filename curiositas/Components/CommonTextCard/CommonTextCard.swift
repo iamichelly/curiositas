@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CommonTextCard: UITextField {
+class CommonTextCard: UILabel {
     
     init(withText text: String){
         super.init(frame: .zero)
@@ -15,12 +15,21 @@ class CommonTextCard: UITextField {
         setupView()
     }
     
+    init(){
+        super.init(frame: .zero)
+        setupView()
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+        
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func changeText(toValue text: String){
+        self.text = text
     }
 }

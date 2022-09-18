@@ -15,6 +15,6 @@ extension CommonTextCard: AnyView {
         self.font = .rounded(ofSize: 20, weight: .semibold)
         self.textColor = .white
         self.textAlignment = .center
-
+        self.backgroundColor = .clear
     }
 }

@@ -9,6 +9,12 @@ import UIKit
 
 class TopCardGameContainer: UIView {
     
+    weak var dataSource: OneWordCarouselDataSource? {
+        didSet {
+            carousel.dataSource = dataSource
+        }
+    }
+    
     struct Constants {
         static let ARROW_LEFT = "chevron.left"
         static let ARROW_RIGHT = "chevron.right"
@@ -25,13 +31,7 @@ class TopCardGameContainer: UIView {
         return button
     }()
     
-    let carousel: UIStackView = {
-        let stack = UIStackView()
-        stack.alignment = .fill
-        stack.spacing = 24
-        stack.axis = .horizontal
-        return stack
-    }()
+    let carousel = OneWordCarousel()
     
     let curiosityDescription: UITextView = {
         let label = UITextView()
@@ -42,23 +42,7 @@ class TopCardGameContainer: UIView {
         label.backgroundColor = .clear
         return label
     }()
-    
-    let beforeIcon: UIImageView = {
-        let image = UIImage(systemName: Constants.ARROW_LEFT)
-        let imageView = UIImageView(image: image)
-        imageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
-        return imageView
-    }()
-    
-    let nextIcon: UIImageView = {
-        let image = UIImage(systemName: Constants.ARROW_RIGHT)
-        let imageView = UIImageView(image: image)
-        imageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        imageView.setContentHuggingPriority(.defaultHigh, for: .vertical)
-        return imageView
-    }()
-    
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()

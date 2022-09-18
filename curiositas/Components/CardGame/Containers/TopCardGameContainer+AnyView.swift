@@ -16,10 +16,6 @@ extension TopCardGameContainer: AnyView {
         
         self.addSubview(carousel)
         self.addSubview(tips)
-        
-        carousel.addArrangedSubview(beforeIcon)
-        carousel.addArrangedSubview(tip)
-        carousel.addArrangedSubview(nextIcon)
     }
     
     func setupConstraints() {
@@ -63,15 +59,5 @@ extension TopCardGameContainer: AnyView {
             carousel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32.HAdapted),
             carousel.heightAnchor.constraint(equalToConstant: 24)
         ])
-    }
-    
-    func setupAdditionalConfiguration() {
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapBeforeButton))
-        beforeIcon.isUserInteractionEnabled = true
-        beforeIcon.addGestureRecognizer(gesture)
-    }
-    
-    @objc func didTapBeforeButton(){
-        print("oi")
     }
 }
