@@ -30,6 +30,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         gravity.magnitude = 4
     }
     
+
+    
     func createCard(offset: CGFloat) -> UIView {
         let cardHeight = self.view.safeAreaLayoutGuide.layoutFrame.height - 90
         let cardFrame = CGRect(x: 0, y: 0, width: self.view.frame.width - 60, height: cardHeight).offsetBy(dx: 30, dy: self.view.bounds.size.height - offset)
@@ -164,9 +166,7 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         let cardview = addCard(offset: offset, dataForVC: nil)
         views.append(cardview)
         offset -= 50
-            
         }
-        
     }
 }
 

@@ -13,7 +13,7 @@ class CardView: UIView {
     let cardStackView: UIStackView = UIStackView()
     let cardNumberContainer: UIView = UIView()
     let cardCheckedContainer: UIView = UIView()
-
+    let path: UIBezierPath = UIBezierPath()
     lazy var cardImageView: UIImageView = {
         let cardImageView = UIImageView(image: UIImage(named: "logo"))
         cardImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -48,10 +48,30 @@ class CardView: UIView {
         setupViewAttributes()
         setupViewHierarchy()
         setupConstraints()
+        createShape()
+
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func createShape() {
+        path.move(to: CGPoint(x: 0, y: frame.height * 0.3))
+        path.addCurve(to: CGPoint(x: frame.width, y: frame.height * 0.45), controlPoint1: CGPoint(x: frame.width * 0.5, y: frame.height * 0.25), controlPoint2: CGPoint(x: frame.width*0.9, y: frame.height * 0.4))
+        path.addLine(to: CGPoint(x: frame.width, y: frame.height * 0.7))
+        path.addCurve(to: CGPoint(x: 0, y: frame.height * 0.6), controlPoint1: CGPoint(x: frame.width * 0.75, y: frame.height * 0.75), controlPoint2: CGPoint(x: frame.width*0.3, y: frame.height * 0.6))
+        path.close()
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        
+        shapeLayer.strokeColor = UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.00).cgColor
+        shapeLayer.opacity = 0.12
+        
+        shapeLayer.fillColor = UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.00).cgColor
+        shapeLayer.lineWidth = 1.0
+        layer.addSublayer(shapeLayer)
     }
     
     func setupViewHierarchy() {
