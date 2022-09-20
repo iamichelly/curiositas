@@ -14,7 +14,7 @@ class TopCardGameContainer: UIView {
             carousel.dataSource = dataSource
         }
     }
-    
+
     struct Constants {
         static let ARROW_LEFT = "chevron.left"
         static let ARROW_RIGHT = "chevron.right"

@@ -15,6 +15,8 @@ class InstructionViewController: UIViewController {
         super.viewDidLoad()
         self.view = instructionView
         setupAdditionalConfiguration()
+        navigationController?.setNavigationBarHidden(false, animated: false)
+
     }
     
     func setupAdditionalConfiguration(){
