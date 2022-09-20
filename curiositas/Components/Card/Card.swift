@@ -13,7 +13,9 @@ class CardView: UIView {
     let cardStackView: UIStackView = UIStackView()
     let cardNumberContainer: UIView = UIView()
     let cardCheckedContainer: UIView = UIView()
+    let cardImageContainer: UIView = UIView()
     let path: UIBezierPath = UIBezierPath()
+    
     lazy var cardImageView: UIImageView = {
         let cardImageView = UIImageView(image: UIImage(named: "logo"))
         cardImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -78,6 +80,8 @@ class CardView: UIView {
         self.addSubview(cardStackView)
         cardStackView.addSubview(cardNumberContainer)
         cardStackView.addSubview(cardCheckedContainer)
+        cardStackView.addSubview(cardImageContainer)
+        cardImageContainer.addSubview(cardImageView)
         cardNumberContainer.addSubview(cardNumberLabel)
         cardCheckedContainer.addSubview(cardCheckedIcon)
     }
@@ -115,6 +119,17 @@ class CardView: UIView {
             cardCheckedIcon.topAnchor.constraint(equalTo: cardCheckedContainer.topAnchor, constant: 34),
             cardCheckedIcon.trailingAnchor.constraint(equalTo: cardCheckedContainer.trailingAnchor, constant: 28),
             cardCheckedIcon.bottomAnchor.constraint(equalTo: cardCheckedContainer.bottomAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            cardImageContainer.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
+            cardImageContainer.topAnchor.constraint(equalTo: cardStackView.topAnchor),
+            cardImageContainer.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
+            cardImageContainer.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor),
+            cardImageView.leadingAnchor.constraint(equalTo: cardImageContainer.leadingAnchor),
+            cardImageView.topAnchor.constraint(equalTo: cardImageContainer.topAnchor),
+            cardImageView.trailingAnchor.constraint(equalTo: cardImageContainer.trailingAnchor),
+            cardImageView.bottomAnchor.constraint(equalTo: cardImageContainer.bottomAnchor),
         ])
     }
 }
