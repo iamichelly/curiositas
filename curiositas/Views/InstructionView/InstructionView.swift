@@ -9,10 +9,54 @@ import UIKit
 
 class InstructionView: UIScrollView {
     
-    let howToPlay = TitleAndSubtitle("Como jogar", TextConstants.shared.HOW_TO_PLAY_INSTRUCTION)
-    let example = TitleAndSubtitle("Exemplo", TextConstants.shared.EXAMPLE_INSTRUCTION)
-    let endGame = TitleAndSubtitle("Fim de jogo", TextConstants.shared.END_GAME_INSTRUCTION)
+    let stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 16
+        return stack
+    }()
     
+    let howToPlayTitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: "Como jogar")
+        let model = TitleOrSubtitleModel(type: .title)
+        text.configure(with: model)
+        return text
+    }()
+    
+    let howToPlaySubtitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: TextConstants.shared.HOW_TO_PLAY_INSTRUCTION)
+        let model = TitleOrSubtitleModel(type: .subtitle)
+        text.configure(with: model)
+        return text
+    }()
+    
+    let exampleTitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: "Exemplo")
+        let model = TitleOrSubtitleModel(type: .title)
+        text.configure(with: model)
+        return text
+    }()
+    
+    let exampleSubtitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: TextConstants.shared.EXAMPLE_INSTRUCTION)
+        let model = TitleOrSubtitleModel(type: .subtitle)
+        text.configure(with: model)
+        return text
+    }()
+    
+    let endGameTitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: "Fim de jogo")
+        let model = TitleOrSubtitleModel(type: .title)
+        text.configure(with: model)
+        return text
+    }()
+    
+    let endGameSubtitle: TitleOrSubtitle = {
+        let text = TitleOrSubtitle(withText: TextConstants.shared.END_GAME_INSTRUCTION)
+        let model = TitleOrSubtitleModel(type: .subtitle)
+        text.configure(with: model)
+        return text
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,27 +66,6 @@ class InstructionView: UIScrollView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func layoutSubviews() {
-        let widthScreen = UIScreen.main.bounds.width
-        howToPlay.frame = CGRect(x: 0, y: 0, width: widthScreen, height: 560)
-        example.frame = CGRect(x: 0, y: 560, width: widthScreen, height: 180)
-        endGame.frame = CGRect(x: 0, y: 740, width: widthScreen, height: 180)
-    }
 }
 
-extension InstructionView: AnyView {
-    
-    func addSubviews() {
-        self.addSubview(howToPlay)
-        self.addSubview(example)
-        self.addSubview(endGame)
-    }
-    
-    func setupConstraints() {}
-    
-    func setupAdditionalConfiguration(){
-        self.backgroundColor = UIColor(named: ColorConstants.shared.PRIMARY_COLOR)
-        self.contentSize = CGSize(width: UIScreen.main.bounds.width, height: 920)
-    }
-}
+

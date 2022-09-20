@@ -14,6 +14,13 @@ class InstructionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = instructionView
+        setupAdditionalConfiguration()
     }
-
+    
+    func setupAdditionalConfiguration(){
+        navigationController?.navigationBar.barTintColor = UIColor(named: ColorConstants.shared.PRIMARY_COLOR)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor(named: ColorConstants.shared.PRIMARY_COLOR) ?? .black]
+    }
+    
 }
