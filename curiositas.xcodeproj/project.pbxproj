@@ -89,6 +89,10 @@
 		BF6D877228D4B07200E34699 /* SFSymbolsButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */; };
 		BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */; };
 		BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */; };
+		BF6D878028D8EF2C00E34699 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D877F28D8EF2C00E34699 /* Popup.swift */; };
+		BF6D878228D8F0A200E34699 /* PopUp+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */; };
+		BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878328D8F2D100E34699 /* PopupViewModel.swift */; };
+		BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878528D93BA800E34699 /* PopUpType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +180,10 @@
 		BF6D877128D4B07200E34699 /* SFSymbolsButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonType.swift; sourceTree = "<group>"; };
 		BF6D877328D4B5A700E34699 /* SFSymbolsButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButtonDelegate.swift; sourceTree = "<group>"; };
 		BF6D877528D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbolsButton+AnyView.swift"; sourceTree = "<group>"; };
+		BF6D877F28D8EF2C00E34699 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PopUp+AnyView.swift"; sourceTree = "<group>"; };
+		BF6D878328D8F2D100E34699 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		BF6D878528D93BA800E34699 /* PopUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +444,7 @@
 		0DC3657128CFBC40004350E2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF6D877E28D8EF1F00E34699 /* Popup */,
 				0D9A3B6828D78AA200FE4FF7 /* OneWordCarousel */,
 				0D9A3B5328D6386900FE4FF7 /* CommonTextCard */,
 				0D9A3B4A28D6344A00FE4FF7 /* YellowTitle */,
@@ -543,6 +552,17 @@
 			path = SFSymbolsButton;
 			sourceTree = "<group>";
 		};
+		BF6D877E28D8EF1F00E34699 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D877F28D8EF2C00E34699 /* Popup.swift */,
+				BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */,
+				BF6D878328D8F2D100E34699 /* PopupViewModel.swift */,
+				BF6D878528D93BA800E34699 /* PopUpType.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -617,6 +637,7 @@
 				BF6D876E28D3C34100E34699 /* SFSymbolsButton.swift in Sources */,
 				0DDBDDB528D3E14600DB3C29 /* LearningCuriositasLogo.swift in Sources */,
 				0DC3657428CFBDD8004350E2 /* ImageConstants.swift in Sources */,
+				BF6D878028D8EF2C00E34699 /* Popup.swift in Sources */,
 				0DDBDDCB28D55F1100DB3C29 /* Checkbox.swift in Sources */,
 				BF6D877028D4B02500E34699 /* SFSymbolsButtonViewModel.swift in Sources */,
 				0D66345C28D2EB3600356CDB /* StartPlayViewController.swift in Sources */,
@@ -634,6 +655,8 @@
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
 				BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */,
+				BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */,
+				BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0D9A3B6C28D78B8F00FE4FF7 /* OneWordCarousel.swift in Sources */,
 				0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */,
@@ -692,6 +715,7 @@
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */,
 				0D9A3B6328D675F100FE4FF7 /* CardGame+AnyView.swift in Sources */,
+				BF6D878228D8F0A200E34699 /* PopUp+AnyView.swift in Sources */,
 				0D9A3B5228D6386500FE4FF7 /* CommonTextCard.swift in Sources */,
 				0D66344928D2DEFF00356CDB /* CallFriendsInformation.swift in Sources */,
 				0D66345E28D2EB4A00356CDB /* StartPlayView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YellowTitle: UITextField {
+class YellowTitle: UILabel {
     
     init(withText text: YellowTitleType){
         super.init(frame: .zero)

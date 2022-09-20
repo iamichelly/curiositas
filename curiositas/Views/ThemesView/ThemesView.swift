@@ -11,6 +11,13 @@ typealias UICollectionViewProtocol = UICollectionViewDataSource & UICollectionVi
 
 class ThemesView: UIView {
     weak var delegate: SFSymbolsButtonDelegate?
+    
+    let popUp: Popup = {
+        let popup = Popup()
+        let model = PopupViewModel(type: .mediatorPopUp)
+        popup.configure(with: model)
+        return popup
+    }()
 
     let questionButton: SFSymbolsButton = {
         let button = SFSymbolsButton()
@@ -39,6 +46,7 @@ class ThemesView: UIView {
     let questionButtonContainer = UIView()
     let titleLabelContainer = UIView()
     let themesCollectionViewContainer = UIView()
+
 
     let themesCollectionView: UICollectionView = {
         let width = UIScreen.main.bounds.width  - 64
@@ -82,6 +90,7 @@ extension ThemesView {
     }
     
     @objc func didUserTapQuestionButton() {
+        
         delegate?.didUserTapButton()
     }
 }

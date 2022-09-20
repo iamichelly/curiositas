@@ -15,5 +15,7 @@ enum YellowTitleType: String {
     case keyWords = "Palavras Chave"
     case firstGroup = "Mostre essa palavra para o time 1"
     case secondGroup = "Mostre essa palavra para o time 2"
+    case firstPopUp = "A partir de agora é com o mediador."
+
     
 }

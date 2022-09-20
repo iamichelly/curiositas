@@ -18,6 +18,7 @@ extension ThemesView: AnyView {
         themesStackView.addArrangedSubview(questionButtonContainer)
         themesStackView.addArrangedSubview(titleLabelContainer)
         themesStackView.addArrangedSubview(themesCollectionViewContainer)
+        self.addSubview(popUp)
     }
     
     func setupConstraints() {
@@ -54,6 +55,16 @@ extension ThemesView: AnyView {
             themesCollectionView.leadingAnchor.constraint(equalTo: themesCollectionViewContainer.leadingAnchor),
             themesCollectionView.bottomAnchor.constraint(equalTo: themesCollectionViewContainer.bottomAnchor)
         ])
+        
+        popUp.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            popUp.topAnchor.constraint(equalTo: topAnchor),
+            popUp.bottomAnchor.constraint(equalTo: bottomAnchor),
+            popUp.leadingAnchor.constraint(equalTo: leadingAnchor),
+            popUp.trailingAnchor.constraint(equalTo: trailingAnchor),
+
+        ])
+
         
     }
     
