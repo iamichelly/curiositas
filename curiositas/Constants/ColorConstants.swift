@@ -14,4 +14,9 @@ class ColorConstants {
     private init(){}
     
     let PRIMARY_COLOR = "primary_color"
+    let DOT_SELECTED = "dot_selected"
+    let DOT = "dot"
+    let CHECKBOX = "checkbox"
+    let YELLOW = "yellow"
+
 }

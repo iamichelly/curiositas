@@ -15,8 +15,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        var viewControllerToShow: UIViewController
+        
+        if OnboardingManager.shared.wasSeen {
+            viewControllerToShow =  HomeViewController()
+        } else {
+//            viewControllerToShow = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+            viewControllerToShow = HomeViewController()
+        }
+        
         let window = UIWindow(windowScene: windowScene)
-        let navigation = UINavigationController(rootViewController: HomeViewController())
+        let navigation = UINavigationController(rootViewController: viewControllerToShow)
         window.rootViewController = navigation
         self.window = window
         window.makeKeyAndVisible()
