@@ -14,10 +14,10 @@ extension Popup {
         UIView.animate(withDuration: 0.3, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
             
             // HERE
-            self.stackView.transform = CGAffineTransform.identity // Scale your image
+            self.stackView.transform = CGAffineTransform.identity.scaledBy(x: 1.1, y: 1.1) // Scale your image
 
       }) { (finished) in
-          UIView.animate(withDuration: 0, animations: {
+          UIView.animate(withDuration: 0.25, animations: {
             
               self.stackView.transform = CGAffineTransform.identity // undo in 1 seconds
 
