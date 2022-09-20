@@ -27,10 +27,22 @@ extension Popup: AnyView {
     
     func setupConstraints() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        let constraintStack = stackView.widthAnchor.constraint(lessThanOrEqualToConstant: 400)
+            constraintStack.priority = UILayoutPriority(1000)
+        let constraintStackTwo = stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+        constraintStackTwo.priority = UILayoutPriority(998)
+        let constraintStackThree = stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+        constraintStackThree.priority = UILayoutPriority(998)
+        let constraintStackFour =         stackView.centerXAnchor.constraint(equalTo: centerXAnchor)
+        constraintStackFour.priority = UILayoutPriority(999)
+        
         NSLayoutConstraint.activate([
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            constraintStack,
+            constraintStackTwo,
+            constraintStackThree,
+            constraintStackFour,
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+
         ])
         
         buttonOutside.translatesAutoresizingMaskIntoConstraints = false
