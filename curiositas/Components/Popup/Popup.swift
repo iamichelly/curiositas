@@ -71,8 +71,10 @@ class Popup: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        isHidden = true
         setupView()
-        buttonOutside.addTarget(self, action: #selector(didUserTapQuestionButton), for: .touchUpInside)
+        buttonOutside.addTarget(self, action: #selector(closePopup), for: .touchUpInside)
+        popupButton.addTarget(self, action: #selector(closePopup), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -96,14 +98,19 @@ extension Popup {
                 imageContainer.bottomAnchor.constraint(equalTo: image.bottomAnchor)
             ])
         }
-        zoomIn()
-        
-      
     }
     
-    @objc func didUserTapQuestionButton() {
-        print("oi")
+    func openPopup() {
+        self.isHidden = false
+        zoomIn()
+    }
+    
+    @objc func closePopup() {
         zoomOut()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            self.isHidden = true
+            return
+        }
     }
 
 }

@@ -90,7 +90,7 @@ extension ThemesView {
     }
     
     @objc func didUserTapQuestionButton() {
-        
+        popUp.openPopup()
         delegate?.didUserTapButton()
     }
 }
