@@ -93,6 +93,7 @@
 		BF6D878228D8F0A200E34699 /* PopUp+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */; };
 		BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878328D8F2D100E34699 /* PopupViewModel.swift */; };
 		BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878528D93BA800E34699 /* PopUpType.swift */; };
+		BF6D878828D9441500E34699 /* PopUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878728D9441500E34699 /* PopUpAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +185,7 @@
 		BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PopUp+AnyView.swift"; sourceTree = "<group>"; };
 		BF6D878328D8F2D100E34699 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
 		BF6D878528D93BA800E34699 /* PopUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpType.swift; sourceTree = "<group>"; };
+		BF6D878728D9441500E34699 /* PopUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,6 +561,7 @@
 				BF6D878128D8F0A200E34699 /* PopUp+AnyView.swift */,
 				BF6D878328D8F2D100E34699 /* PopupViewModel.swift */,
 				BF6D878528D93BA800E34699 /* PopUpType.swift */,
+				BF6D878728D9441500E34699 /* PopUpAnimation.swift */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
 				0D9A3B6C28D78B8F00FE4FF7 /* OneWordCarousel.swift in Sources */,
+				BF6D878828D9441500E34699 /* PopUpAnimation.swift in Sources */,
 				0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */,
 				0D9A3B5028D6366300FE4FF7 /* YellowTitleType.swift in Sources */,
 				0D66345528D2E5B100356CDB /* LearningCuriositasInformation.swift in Sources */,

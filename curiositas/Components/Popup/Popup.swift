@@ -95,12 +95,15 @@ extension Popup {
                 image.centerXAnchor.constraint(equalTo: imageContainer.centerXAnchor),
                 imageContainer.bottomAnchor.constraint(equalTo: image.bottomAnchor)
             ])
-
         }
+        zoomIn()
+        
+      
     }
     
     @objc func didUserTapQuestionButton() {
         print("oi")
+        zoomOut()
     }
 
 }
