@@ -71,6 +71,8 @@ class ThemesView: UIView {
         super.init(frame: frame)
         setupView()
         questionButton.addTarget(self, action: #selector(didUserTapQuestionButton), for: .touchUpInside)
+        popUp.openPopup()
+
 
     }
     
@@ -90,7 +92,6 @@ extension ThemesView {
     }
     
     @objc func didUserTapQuestionButton() {
-        popUp.openPopup()
         delegate?.didUserTapButton()
     }
 }

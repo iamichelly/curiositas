@@ -57,6 +57,9 @@
 		0D9A3B6E28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6D28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift */; };
 		0D9A3B7028D7B26400FE4FF7 /* OneWordCarouselDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B6F28D7B26400FE4FF7 /* OneWordCarouselDataSource.swift */; };
 		0D9A3B7228D7B28F00FE4FF7 /* OneWordCarousel+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B7128D7B28F00FE4FF7 /* OneWordCarousel+AnyView.swift */; };
+		0D9A3B7B28D953A700FE4FF7 /* TitleOrSubtitleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B7A28D953A700FE4FF7 /* TitleOrSubtitleType.swift */; };
+		0D9A3B7D28D953F500FE4FF7 /* TitleOrSubtitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B7C28D953F500FE4FF7 /* TitleOrSubtitleModel.swift */; };
+		0D9A3B7F28D9590400FE4FF7 /* InstructionView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A3B7E28D9590400FE4FF7 /* InstructionView+AnyView.swift */; };
 		0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655128CFB9A2004350E2 /* AppDelegate.swift */; };
 		0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */; };
 		0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3655528CFB9A2004350E2 /* HomeViewController.swift */; };
@@ -94,6 +97,11 @@
 		BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878328D8F2D100E34699 /* PopupViewModel.swift */; };
 		BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878528D93BA800E34699 /* PopUpType.swift */; };
 		BF6D878828D9441500E34699 /* PopUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D878728D9441500E34699 /* PopUpAnimation.swift */; };
+		0DDBDDB728D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB628D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift */; };
+		0DDBDDBA28D3EE0400DB3C29 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDB928D3EE0300DB3C29 /* InstructionViewController.swift */; };
+		0DDBDDBC28D3EE5C00DB3C29 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDBB28D3EE5C00DB3C29 /* InstructionView.swift */; };
+		0DDBDDC228D4C24E00DB3C29 /* TitleOrSubtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDC128D4C24E00DB3C29 /* TitleOrSubtitle.swift */; };
+		0DDBDDC428D4CF1E00DB3C29 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDC328D4CF1E00DB3C29 /* TextConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +155,9 @@
 		0D9A3B6D28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardGame+OneWordCarouselDataSource.swift"; sourceTree = "<group>"; };
 		0D9A3B6F28D7B26400FE4FF7 /* OneWordCarouselDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWordCarouselDataSource.swift; sourceTree = "<group>"; };
 		0D9A3B7128D7B28F00FE4FF7 /* OneWordCarousel+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneWordCarousel+AnyView.swift"; sourceTree = "<group>"; };
+		0D9A3B7A28D953A700FE4FF7 /* TitleOrSubtitleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOrSubtitleType.swift; sourceTree = "<group>"; };
+		0D9A3B7C28D953F500FE4FF7 /* TitleOrSubtitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOrSubtitleModel.swift; sourceTree = "<group>"; };
+		0D9A3B7E28D9590400FE4FF7 /* InstructionView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InstructionView+AnyView.swift"; sourceTree = "<group>"; };
 		0DC3654E28CFB9A2004350E2 /* curiositas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = curiositas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC3655128CFB9A2004350E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DC3655328CFB9A2004350E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +197,11 @@
 		BF6D878328D8F2D100E34699 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
 		BF6D878528D93BA800E34699 /* PopUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpType.swift; sourceTree = "<group>"; };
 		BF6D878728D9441500E34699 /* PopUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAnimation.swift; sourceTree = "<group>"; };
+		0DDBDDB628D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LearningCuriositasLogo+AnyView.swift"; sourceTree = "<group>"; };
+		0DDBDDB928D3EE0300DB3C29 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		0DDBDDBB28D3EE5C00DB3C29 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		0DDBDDC128D4C24E00DB3C29 /* TitleOrSubtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOrSubtitle.swift; sourceTree = "<group>"; };
+		0DDBDDC328D4CF1E00DB3C29 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +320,7 @@
 				0D66345428D2E5B100356CDB /* LearningCuriositasInformation.swift */,
 				0D66345828D2E79B00356CDB /* LearningCuriositasInformation+AnyView.swift */,
 				0DDBDDB428D3E14600DB3C29 /* LearningCuriositasLogo.swift */,
+				0DDBDDB628D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -422,6 +439,7 @@
 				BF6D876728D3B9D100E34699 /* TestView */,
 				BF6D876128D3808300E34699 /* Cells */,
 				BF6D875128D24C4800E34699 /* ThemesView */,
+				0DDBDDB828D3EDEE00DB3C29 /* InstructionView */,
 				0D66345A28D2EB2000356CDB /* StartPlay */,
 				0D66344C28D2E48500356CDB /* LearningCuriositas */,
 				0D66344228D2DDAA00356CDB /* CallFriends */,
@@ -453,6 +471,7 @@
 				0DDBDDC928D55EF300DB3C29 /* Checkbox */,
 				0DDBDDC628D50ECA00DB3C29 /* CardGame */,
 				BF6D876C28D3C0AA00E34699 /* SFSymbolsButton */,
+				0DDBDDC028D4C1D200DB3C29 /* TitleOrSubtitle */,
 				0D28527E28D132EE00BFF734 /* CuriositasButton */,
 			);
 			path = Components;
@@ -464,6 +483,7 @@
 				0DC3657328CFBDD8004350E2 /* ImageConstants.swift */,
 				0DD5526C28D03435001FABCA /* ColorConstants.swift */,
 				BF6D875C28D3776200E34699 /* ThemesConstants.swift */,
+				0DDBDDC328D4CF1E00DB3C29 /* TextConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -566,6 +586,26 @@
 			path = Popup;
 			sourceTree = "<group>";
 		};
+		0DDBDDB828D3EDEE00DB3C29 /* InstructionView */ = {
+			isa = PBXGroup;
+			children = (
+				0DDBDDB928D3EE0300DB3C29 /* InstructionViewController.swift */,
+				0DDBDDBB28D3EE5C00DB3C29 /* InstructionView.swift */,
+				0D9A3B7E28D9590400FE4FF7 /* InstructionView+AnyView.swift */,
+			);
+			path = InstructionView;
+			sourceTree = "<group>";
+		};
+		0DDBDDC028D4C1D200DB3C29 /* TitleOrSubtitle */ = {
+			isa = PBXGroup;
+			children = (
+				0DDBDDC128D4C24E00DB3C29 /* TitleOrSubtitle.swift */,
+				0D9A3B7A28D953A700FE4FF7 /* TitleOrSubtitleType.swift */,
+				0D9A3B7C28D953F500FE4FF7 /* TitleOrSubtitleModel.swift */,
+			);
+			path = TitleOrSubtitle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -653,6 +693,7 @@
 				BF6D875B28D2626600E34699 /* ThemesViewController+UICollectionView.swift in Sources */,
 				0D66344628D2DE5100356CDB /* CallFriendsView.swift in Sources */,
 				0D9A3B4C28D6346D00FE4FF7 /* YellowTitle.swift in Sources */,
+				0D9A3B7B28D953A700FE4FF7 /* TitleOrSubtitleType.swift in Sources */,
 				0D66346928D2F5BA00356CDB /* StartPlayActions+AnyView.swift in Sources */,
 				0D9A3B6E28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift in Sources */,
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
@@ -670,8 +711,12 @@
 				0D66343628D2310D00356CDB /* Onboarding+AnyView.swift in Sources */,
 				0D9A3B7228D7B28F00FE4FF7 /* OneWordCarousel+AnyView.swift in Sources */,
 				0DC3655C28CFB9A2004350E2 /* curiositas.xcdatamodeld in Sources */,
+				0DDBDDBA28D3EE0400DB3C29 /* InstructionViewController.swift in Sources */,
+				0DDBDDC228D4C24E00DB3C29 /* TitleOrSubtitle.swift in Sources */,
 				0D66343A28D2316D00356CDB /* OnboardingViewController+UIPageViewControllerDelegate.swift in Sources */,
 				0D66344B28D2E2AF00356CDB /* CallFriendsView+AnyView.swift in Sources */,
+				0DDBDDBC28D3EE5C00DB3C29 /* InstructionView.swift in Sources */,
+				0D9A3B7F28D9590400FE4FF7 /* InstructionView+AnyView.swift in Sources */,
 				0D66346028D2EB5C00356CDB /* StartPlayView+AnyView.swift in Sources */,
 				0D66342728D15E5A00356CDB /* MeetCuriositasViewController.swift in Sources */,
 				0D66342928D15E9E00356CDB /* MeetCuriositasView.swift in Sources */,
@@ -692,6 +737,7 @@
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
 				0D66346328D2ECB200356CDB /* StartPlayInformation.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
+				0D9A3B7D28D953F500FE4FF7 /* TitleOrSubtitleModel.swift in Sources */,
 				BF6D875D28D3776200E34699 /* ThemesConstants.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
@@ -711,10 +757,12 @@
 				0D66345028D2E4B300356CDB /* LearningCuriositasView.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
+				0DDBDDB728D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift in Sources */,
 				0D66344428D2DDD400356CDB /* CallFriendsViewController.swift in Sources */,
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				0D66343428D18B2000356CDB /* OnboardingViewController.swift in Sources */,
+				0DDBDDC428D4CF1E00DB3C29 /* TextConstants.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
 				BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */,
