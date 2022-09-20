@@ -107,7 +107,7 @@ extension Popup {
     
     @objc func closePopup() {
         zoomOut()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.27) {
             self.isHidden = true
             return
         }
