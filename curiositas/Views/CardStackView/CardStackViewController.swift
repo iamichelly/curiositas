@@ -20,6 +20,7 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.setNavigationBarHidden(false, animated: false)
         view = CardStackView()
         view.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         

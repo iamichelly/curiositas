@@ -23,8 +23,9 @@ extension ThemesViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let playScreen = TestViewController(with: ThemesConstants.shared.THEMES_INFO[indexPath.row])
-        navigationController?.pushViewController(playScreen, animated: false)
+        let cardStackScreen = CardStackViewController()
+//        let playScreen = TestViewController(with: ThemesConstants.shared.THEMES_INFO[indexPath.row])
+        navigationController?.pushViewController(cardStackScreen, animated: false)
     }
     
 }
