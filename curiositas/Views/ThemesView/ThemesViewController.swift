@@ -23,7 +23,7 @@ class ThemesViewController: UIViewController {
 
 extension ThemesViewController: SFSymbolsButtonDelegate {
     func didUserTapButton() {
-        print("oi")
+        navigationController?.pushViewController(PlayScreenViewController(), animated: false)
     }
     
 }
