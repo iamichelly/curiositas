@@ -150,8 +150,6 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
             }
         } else {
             if viewPinned {
-                cardStackView.backButton.isHidden = false
-                cardStackView.titleLabel.isHidden = false
                 animator.removeBehavior(snap)
                 setCardVisibility(cardView: cardview, alpha: 1)
                 viewPinned = false
@@ -163,6 +161,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         animator.removeBehavior(snap)
         setCardVisibility(cardView: cardview, alpha: 1)
         viewPinned = false
+        cardStackView.backButton.isHidden = false
+        cardStackView.titleLabel.isHidden = false
     }
     
     func setCardVisibility(cardView: UIView, alpha: CGFloat) {
