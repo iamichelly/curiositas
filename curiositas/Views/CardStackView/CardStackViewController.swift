@@ -68,13 +68,15 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     
     
     @objc func didUserTapPlayButton(card: UIView) {
-        closeCard(cardview: card.superview!.superview!.superview!.superview!)
+        guard let superview = card.superview?.superview?.superview?.superview else { return }
+        closeCard(cardview: superview)
         let playView = PlayViewController()
         navigationController?.pushViewController(playView, animated: false)
     }
     
     @objc func didUserTapCloseButton(card: UIView) {
-        closeCard(cardview: card.superview!.superview!.superview!.superview!)
+        guard let superview = card.superview?.superview?.superview?.superview else { return }
+        closeCard(cardview: superview)
     }
     
     func addCard(offset: CGFloat, dataForVC: AnyObject?) -> UIView {
