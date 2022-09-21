@@ -24,6 +24,11 @@ extension HomeViewController: CuriositasButtonDelegate {
         let playScreen = ThemesViewController()
         navigationController?.pushViewController(playScreen, animated: true)
     }
+    
+    func didUserTapOntherButton() {
+        let instruction = InstructionViewController()
+        navigationController?.pushViewController(instruction, animated: true)
+    }
 }
 
 

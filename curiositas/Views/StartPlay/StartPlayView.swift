@@ -9,6 +9,12 @@ import UIKit
 
 class StartPlayView: UIView {
     
+    weak var delegate: CuriositasButtonDelegate? {
+        didSet {
+            startPlayActions.delegate = delegate
+        }
+    }
+    
     let background: UIImageView = {
         let image = UIImage(named: ImageConstants.shared.START_PLAY)
         return UIImageView(image: image)

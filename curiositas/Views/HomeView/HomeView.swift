@@ -56,7 +56,7 @@ class HomeView: UIView {
     }
     
     @objc func didUserTapInstructionButton(){
-        print("oi")
+        delegate?.didUserTapOntherButton()
     }
 }
 

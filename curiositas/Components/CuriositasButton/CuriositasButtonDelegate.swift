@@ -11,4 +11,10 @@ import Foundation
 protocol CuriositasButtonDelegate: AnyObject {
     
     func didUserTapButton()
+    func didUserTapOntherButton()
+}
+
+extension CuriositasButtonDelegate {
+    
+    func didUserTapOntherButton(){}
 }
