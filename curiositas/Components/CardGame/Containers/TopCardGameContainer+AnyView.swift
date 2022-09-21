@@ -22,10 +22,9 @@ extension TopCardGameContainer: AnyView {
         
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            closeButton.topAnchor.constraint(equalTo: topAnchor, constant: 16.VAdapted),
-            closeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.HAdapted),
-            closeButton.heightAnchor.constraint(equalToConstant: 38),
-            closeButton.widthAnchor.constraint(equalToConstant: 38)
+            closeButton.topAnchor.constraint(equalTo: topAnchor, constant: 28),
+            closeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
+          
         ])
         
         curiosity.translatesAutoresizingMaskIntoConstraints = false

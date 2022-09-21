@@ -17,7 +17,7 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     var viewPinned = false
     let cardStackView = CardStackView()
     private var theme: Theme?
- 
+    
     init(with theme: Theme){
         super.init(nibName: nil, bundle: nil)
         self.theme = theme
@@ -32,7 +32,6 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationController?.navigationBar.tintColor = UIColor.white
 
         view = cardStackView
@@ -60,7 +59,22 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         card.layer.shadowOffset = CGSize(width: 0, height: -4)
         card.isUserInteractionEnabled = true
         card.layer.shadowPath = UIBezierPath(rect: card.bounds).cgPath
+        
+        card.closeButton.addTarget(self, action: #selector(didUserTapCloseButton), for: .touchUpInside)
+        
+        card.playButton.addTarget(self, action: #selector(didUserTapPlayButton), for: .touchUpInside)
         return card
+    }
+    
+    
+    @objc func didUserTapPlayButton(card: UIView) {
+        closeCard(cardview: card.superview!.superview!.superview!.superview!)
+        let playView = PlayViewController()
+        navigationController?.pushViewController(playView, animated: false)
+    }
+    
+    @objc func didUserTapCloseButton(card: UIView) {
+        closeCard(cardview: card.superview!.superview!.superview!.superview!)
     }
     
     func addCard(offset: CGFloat, dataForVC: AnyObject?) -> UIView {
@@ -138,6 +152,12 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
                 viewPinned = false
             }
         }
+    }
+    
+    func closeCard(cardview: UIView) {
+        animator.removeBehavior(snap)
+        setCardVisibility(cardView: cardview, alpha: 1)
+        viewPinned = false
     }
     
     func setCardVisibility(cardView: UIView, alpha: CGFloat) {
