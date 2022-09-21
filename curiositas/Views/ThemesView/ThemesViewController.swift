@@ -15,7 +15,7 @@ class ThemesViewController: UIViewController {
         super.viewDidLoad()
         self.view = themesView
         themesView.setCollectionViewDataSourceDelegate(dataSourceDelegate: self)
-        themesView.delegate = self
+        themesView.questionButton.delegate = self
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 

@@ -10,10 +10,12 @@ import UIKit
 
 class SFSymbolsButton: UIButton {
     let buttonImage = UIImageView()
+    weak var delegate: SFSymbolsButtonDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        self.addTarget(self, action: #selector(didUserTapQuestionButton), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -36,4 +38,10 @@ extension SFSymbolsButton {
         
         self.backgroundColor = UIColor.clear
     }
+    
+    @objc func didUserTapQuestionButton() {
+        delegate?.didUserTapButton()
+    }
+    
+    
 }
