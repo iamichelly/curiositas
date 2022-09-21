@@ -28,6 +28,13 @@ class CardGame: UIView {
         stack.axis = .vertical
         return stack
     }()
+    
+    let imageWave: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "wave")
+        image.contentMode = .scaleAspectFill
+        return image
+    }()
         
     override init(frame: CGRect) {
         super.init(frame: frame)
