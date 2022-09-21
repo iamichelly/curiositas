@@ -9,6 +9,8 @@ import UIKit
 
 class StartPlayActions: UIView {
     
+    weak var delegate: CuriositasButtonDelegate? 
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
