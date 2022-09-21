@@ -10,6 +10,29 @@ import UIKit
 class CardStackView : UIView, UICollisionBehaviorDelegate {
 //    let card = CardView(frame: CGRect(x: 0, y: 0, width: 364, height: 720), cardNumber: 1, isCardDone: true)
     
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Temas"
+        label.textColor = .white
+        label.font = .rounded(ofSize: 32, weight: .heavy)
+        return label
+    }()
+    
+    let questionButton: SFSymbolsButton = {
+        let button = SFSymbolsButton()
+        let model = SFSymbolsButtonViewModel(type: .questionMark)
+        button.configure(with: model)
+        return button
+    }()
+    
+    let backButton: SFSymbolsButton = {
+        let button = SFSymbolsButton()
+        let model = SFSymbolsButtonViewModel(type: .back)
+        button.configure(with: model)
+        return button
+    }()
+               
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
 

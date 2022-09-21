@@ -10,7 +10,6 @@ import UIKit
 typealias UICollectionViewProtocol = UICollectionViewDataSource & UICollectionViewDelegate
 
 class ThemesView: UIView {
-    weak var delegate: SFSymbolsButtonDelegate?
     
     let popUp: Popup = {
         let popup = Popup()
@@ -70,7 +69,6 @@ class ThemesView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-        questionButton.addTarget(self, action: #selector(didUserTapQuestionButton), for: .touchUpInside)
         popUp.openPopup()
 
 
@@ -91,7 +89,5 @@ extension ThemesView {
            themesCollectionView.reloadData()
     }
     
-    @objc func didUserTapQuestionButton() {
-        delegate?.didUserTapButton()
-    }
+    
 }

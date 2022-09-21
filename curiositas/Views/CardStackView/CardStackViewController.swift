@@ -16,12 +16,26 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     var viewDragging = false
     var viewPinned = false
     let cardStackView = CardStackView()
+    private var theme: Theme?
+ 
+    init(with theme: Theme){
+        super.init(nibName: nil, bundle: nil)
+        self.theme = theme
+        cardStackView.titleLabel.text = theme.theme
+        cardStackView.questionButton.delegate = self
+        cardStackView.backButton.delegate = self
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.setNavigationBarHidden(false, animated: false)
-        view = CardStackView()
+        navigationController?.navigationBar.tintColor = UIColor.white
+
+        view = cardStackView
         view.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         
         animator = UIDynamicAnimator(referenceView: self.view)
@@ -169,5 +183,23 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         offset -= 50
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
+    }
+    
 }
 
+extension CardStackViewController: SFSymbolsButtonDelegate {
+    func didUserTapButton(button: SFSymbolsButton) {
+        if button == cardStackView.backButton {
+            navigationController?.popViewController(animated: true)
+            return
+        }
+        let instructionView = InstructionViewController()
+        navigationController?.pushViewController(instructionView, animated: true)
+    }
+
+}
