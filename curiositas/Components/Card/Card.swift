@@ -65,7 +65,8 @@ class CardView: UIView {
     lazy var cardNumberLabel: UILabel = {
         let label: UILabel = UILabel()
         let labelAttributes = [NSAttributedString.Key.font: UIFont.rounded(ofSize: 32, weight: .heavy)]
-        let attributedText = NSMutableAttributedString(string: String(cardNumber), attributes: labelAttributes)
+        let attributedText = NSMutableAttributedString(string: String(self.cardNumber), attributes: labelAttributes)
+        print(attributedText.string)
         label.attributedText = attributedText
         label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -83,7 +84,7 @@ class CardView: UIView {
 
     required init(frame: CGRect, cardNumber: Int, isCardDone: Bool) {
         self.isCardDone = true
-        self.cardNumber = 1
+        self.cardNumber = cardNumber
         super.init(frame: frame)
         setupViewAttributes()
         setupViewHierarchy()

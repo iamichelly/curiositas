@@ -39,18 +39,16 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         
         animator = UIDynamicAnimator(referenceView: self.view)
         gravity = UIGravityBehavior()
-        
+         
         animator.addBehavior(gravity)
         gravity.magnitude = 4
     }
     
-
-    
-    func createCard(offset: CGFloat) -> UIView {
+    func createCard(offset: CGFloat, cardNumber: Int) -> UIView {
         let cardHeight = self.view.safeAreaLayoutGuide.layoutFrame.height - 90
         let cardFrame = CGRect(x: 0, y: 0, width: self.view.frame.width - 60, height: cardHeight).offsetBy(dx: 30, dy: self.view.bounds.size.height - offset)
         
-        let card = CardView(frame: cardFrame, cardNumber: 1, isCardDone: true)
+        let card = CardView(frame: cardFrame, cardNumber: cardNumber, isCardDone: true)
         card.layer.cornerRadius = 32
         card.layer.masksToBounds = false
         card.layer.shadowColor = UIColor.black.cgColor
@@ -66,6 +64,7 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         return card
     }
     
+
     
     @objc func didUserTapPlayButton(card: UIView) {
         guard let superview = card.superview?.superview?.superview?.superview else { return }
@@ -79,8 +78,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         closeCard(cardview: superview)
     }
     
-    func addCard(offset: CGFloat, dataForVC: AnyObject?) -> UIView {
-        let card = createCard(offset: offset)
+    func addCard(offset: CGFloat, cardNumber: Int) -> UIView {
+        let card = createCard(offset: offset, cardNumber: cardNumber)
         self.view.addSubview(card)
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(gestureRecognizer:)))
@@ -140,6 +139,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         let viewHasReachedPinLocation = cardview.frame.origin.y < self.view.safeAreaLayoutGuide.layoutFrame.height * 0.3
         if viewHasReachedPinLocation {
             if !viewPinned {
+                cardStackView.backButton.isHidden = true
+                cardStackView.titleLabel.isHidden = true
                 var snapPosition = self.view.center
                 snapPosition.y += 30
                 snap = UISnapBehavior(item: cardview, snapTo: snapPosition)
@@ -160,6 +161,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
         animator.removeBehavior(snap)
         setCardVisibility(cardView: cardview, alpha: 1)
         viewPinned = false
+        cardStackView.backButton.isHidden = false
+        cardStackView.titleLabel.isHidden = false
     }
     
     func setCardVisibility(cardView: UIView, alpha: CGFloat) {
@@ -199,10 +202,10 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         var offset: CGFloat = 350
-        for _ in 0 ... 2 {
-        let cardview = addCard(offset: offset, dataForVC: nil)
-        views.append(cardview)
-        offset -= 50
+        for i in 0 ... 2 {
+            let cardview = addCard(offset: offset, cardNumber: i+1)
+            views.append(cardview)
+            offset -= 50
         }
     }
     
