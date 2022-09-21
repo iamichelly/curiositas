@@ -29,9 +29,9 @@ extension SFSymbolsButton {
     
     func configure(with model: SFSymbolsButtonViewModel){
         let tintColor = model.type == .questionMark ? UIColor(red: 0.54, green: 0.51, blue: 0.63, alpha: 1.00) : .white
-        let systemName = model.type == .questionMark ? "questionmark.circle.fill" : "xmark.circle.fill"
+        let systemName = model.type == .questionMark ? "questionmark.circle.fill" : (model.type == .back ? "chevron.left" :"xmark.circle.fill")
     
-        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 38.0, weight: .heavy, scale: .medium)
+        let symbolConfig = model.type == .back ? UIImage.SymbolConfiguration(pointSize: 18.0, weight: .bold, scale: .large) : UIImage.SymbolConfiguration(pointSize: 38.0, weight: .heavy, scale: .medium)
         let symbol = UIImage(systemName: systemName , withConfiguration: symbolConfig)?.withTintColor(tintColor, renderingMode: .alwaysOriginal)
     
         buttonImage.image = symbol
@@ -40,7 +40,7 @@ extension SFSymbolsButton {
     }
     
     @objc func didUserTapQuestionButton() {
-        delegate?.didUserTapButton()
+        delegate?.didUserTapButton(button: self)
     }
     
     

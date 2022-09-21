@@ -11,4 +11,5 @@ enum SFSymbolsButtonType {
     
     case questionMark
     case close
+    case back
 }

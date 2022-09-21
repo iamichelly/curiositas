@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import UIKit
 
 protocol SFSymbolsButtonDelegate: AnyObject {
-    func didUserTapButton()
+    func didUserTapButton(button:SFSymbolsButton)
 }
