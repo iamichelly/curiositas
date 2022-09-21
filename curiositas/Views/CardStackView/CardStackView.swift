@@ -22,9 +22,9 @@ class CardStackView : UIView, UICollisionBehaviorDelegate {
 //        card.layer.shadowOffset = CGSize(width: -1, height: -1)
 //        card.isUserInteractionEnabled = true
 //        card.layer.shadowPath = UIBezierPath(rect: card.bounds).cgPath
-
+//
 //        self.addSubview(card)
-        setupView()
+//        setupView()
     }
     
     required init?(coder: NSCoder) {

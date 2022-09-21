@@ -11,6 +11,7 @@ class FirstTeamCard: UIView {
     
     weak var delegate: CuriositasButtonDelegate?
 
+//    let cardComponent: CardView
     
     let backgroundImage: UIImageView = {
         let image = UIImage(named: ImageConstants.shared.BACKGROUND_IMAGE)

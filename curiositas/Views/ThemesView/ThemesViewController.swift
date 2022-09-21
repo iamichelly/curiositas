@@ -10,7 +10,9 @@ import UIKit
 class ThemesViewController: UIViewController {
 
     let themesView = ThemesView()
+    let playScreen = PlayScreenView()
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = themesView
@@ -23,7 +25,7 @@ class ThemesViewController: UIViewController {
 
 extension ThemesViewController: SFSymbolsButtonDelegate {
     func didUserTapButton() {
-        let instructionView = InstructionViewController()
+        let instructionView = SecondTeamViewController()
         navigationController?.pushViewController(instructionView, animated: true)
     }
     

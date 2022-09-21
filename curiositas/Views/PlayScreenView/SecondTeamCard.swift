@@ -9,10 +9,10 @@ import UIKit
 
 class SecondTeamCard: UIView {
     
-    let backgroundImage: UIImageView = {
-        let image = UIImage(named: ImageConstants.shared.BACKGROUND_IMAGE)
-        return UIImageView(image: image)
-    }()
+//    let backgroundImage: UIImageView = {
+//        let image = UIImage(named: ImageConstants.shared.BACKGROUND_IMAGE)
+//        return UIImageView(image: image)
+//    }()
     
     let questionButton: SFSymbolsButton = {
         let button = SFSymbolsButton()
@@ -21,10 +21,10 @@ class SecondTeamCard: UIView {
         return button
     }()
     
-    let cardImage: UIImageView = {
-        let image = UIImage(named: ImageConstants.shared.CARD_IMAGE)
-        return UIImageView(image: image)
-    }()
+//    let cardImage: UIImageView = {
+//        let image = UIImage(named: ImageConstants.shared.CARD_IMAGE)
+//        return UIImageView(image: image)
+//    }()
     
     let closeButton: SFSymbolsButton = {
         let button = SFSymbolsButton()
@@ -126,9 +126,9 @@ extension SecondTeamCard: AnyView {
     func addSubviews() {
         
         
-        self.addSubview(backgroundImage)
+        //self.addSubview(backgroundImage)
         self.addSubview(questionButton)
-        self.addSubview(cardImage)
+       // self.addSubview(cardImage)
         self.addSubview(cardStackView)
         
         
@@ -152,13 +152,13 @@ extension SecondTeamCard: AnyView {
 
     func setupConstraints() {
         
-        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            backgroundImage.topAnchor.constraint(equalTo: topAnchor),
-            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
-            backgroundImage.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backgroundImage.leadingAnchor.constraint(equalTo: leadingAnchor)
-        ])
+//        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            backgroundImage.topAnchor.constraint(equalTo: topAnchor),
+//            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
+//            backgroundImage.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            backgroundImage.leadingAnchor.constraint(equalTo: leadingAnchor)
+//        ])
         
         questionButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -167,13 +167,13 @@ extension SecondTeamCard: AnyView {
             
         ])
         
-        cardImage.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            cardImage.topAnchor.constraint(equalTo: cardStackView.topAnchor),
-            cardImage.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
-            cardImage.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
-            cardImage.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor)
-        ])
+//        cardImage.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            cardImage.topAnchor.constraint(equalTo: cardStackView.topAnchor),
+//            cardImage.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
+//            cardImage.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
+//            cardImage.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor)
+//        ])
         
         cardStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
