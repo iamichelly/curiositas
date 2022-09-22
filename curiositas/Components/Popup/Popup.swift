@@ -8,6 +8,8 @@
 import UIKit
 
 class Popup: UIView {
+    weak var delegate: PopupDelegate?
+
     let buttonOutside: UIButton = {
         let buttonAux = UIButton()
         
@@ -104,13 +106,13 @@ extension Popup {
         self.isHidden = false
         zoomIn()
     }
-    
     @objc func closePopup() {
         zoomOut()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.27) {
             self.isHidden = true
             return
         }
+        delegate?.didUserTapButton()
     }
 
 }

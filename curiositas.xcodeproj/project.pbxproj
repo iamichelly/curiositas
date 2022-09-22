@@ -88,6 +88,7 @@
 		943D324728DBE2BF00426B96 /* CardTeamOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324628DBE2BF00426B96 /* CardTeamOne.swift */; };
 		943D324928DBE2D100426B96 /* CardTeamTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324828DBE2D100426B96 /* CardTeamTwo.swift */; };
 		943D324B28DBE69C00426B96 /* AnotherCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324A28DBE69C00426B96 /* AnotherCardView.swift */; };
+		94A5BE7028DCE86100E0BA63 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5BE6F28DCE86100E0BA63 /* PopupDelegate.swift */; };
 		BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875228D24C7100E34699 /* ThemesViewController.swift */; };
 		BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875428D24CA100E34699 /* ThemesView.swift */; };
 		BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */; };
@@ -199,6 +200,7 @@
 		943D324628DBE2BF00426B96 /* CardTeamOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamOne.swift; sourceTree = "<group>"; };
 		943D324828DBE2D100426B96 /* CardTeamTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamTwo.swift; sourceTree = "<group>"; };
 		943D324A28DBE69C00426B96 /* AnotherCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCardView.swift; sourceTree = "<group>"; };
+		94A5BE6F28DCE86100E0BA63 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 		BF6D875228D24C7100E34699 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF6D875428D24CA100E34699 /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
 		BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemesView+AnyView.swift"; sourceTree = "<group>"; };
@@ -630,6 +632,7 @@
 				BF6D878328D8F2D100E34699 /* PopupViewModel.swift */,
 				BF6D878528D93BA800E34699 /* PopUpType.swift */,
 				BF6D878728D9441500E34699 /* PopUpAnimation.swift */,
+				94A5BE6F28DCE86100E0BA63 /* PopupDelegate.swift */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				943D324328DBE29800426B96 /* FirstCardViewController.swift in Sources */,
+				94A5BE7028DCE86100E0BA63 /* PopupDelegate.swift in Sources */,
 				EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */,
 				EB8D47EA28D24F5000648865 /* Card.swift in Sources */,
 				EB8D47EE28DB832500648865 /* CardFinal.swift in Sources */,

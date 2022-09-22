@@ -37,13 +37,19 @@ class SecondCardViewController: UIViewController {
         card.isUserInteractionEnabled = true
         card.layer.shadowPath = UIBezierPath(rect: card.bounds).cgPath
         card.playButton.addTarget(self, action: #selector(didUserTapPlayButton), for: .touchUpInside)
-        
+        card.closeButton.addTarget(self, action: #selector(didUserTapCloseButton), for: .touchUpInside)
+
         return card
     }
     
     @objc func didUserTapPlayButton(card: UIView) {
         let playView = PlayViewController()
         navigationController?.pushViewController(playView, animated: false)
+    }
+    
+    @objc func didUserTapCloseButton() {
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+        self.navigationController!.popToViewController(viewControllers[viewControllers.count - 3], animated: false)
     }
     
     func addCard(offset: CGFloat, dataForVC: AnyObject?) -> UIView {

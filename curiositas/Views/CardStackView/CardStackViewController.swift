@@ -18,12 +18,22 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     let cardStackView = CardStackView()
     private var theme: Theme?
     
+    let popUp: Popup = {
+        let popup = Popup()
+        let model = PopupViewModel(type: .mediatorPopUp)
+        popup.configure(with: model)
+        return popup
+    }()
+
+    
     init(with theme: Theme){
         super.init(nibName: nil, bundle: nil)
         self.theme = theme
         cardStackView.titleLabel.text = theme.theme
         cardStackView.questionButton.delegate = self
         cardStackView.backButton.delegate = self
+        self.popUp.delegate = self
+
     }
     
     required init?(coder: NSCoder) {
@@ -33,15 +43,16 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = UIColor.white
-
         view = cardStackView
+
         view.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
-        
+
         animator = UIDynamicAnimator(referenceView: self.view)
         gravity = UIGravityBehavior()
          
         animator.addBehavior(gravity)
         gravity.magnitude = 4
+        
     }
     
     func createCard(offset: CGFloat, cardNumber: Int) -> UIView {
@@ -69,8 +80,8 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
     @objc func didUserTapPlayButton(card: UIView) {
         guard let superview = card.superview?.superview?.superview?.superview else { return }
         closeCard(cardview: superview)
-        let playView = FirstCardViewController()
-        navigationController?.pushViewController(playView, animated: false)
+
+        popUp.openPopup()
     }
     
     @objc func didUserTapCloseButton(card: UIView) {
@@ -207,6 +218,15 @@ class CardStackViewController: UIViewController, UICollisionBehaviorDelegate {
             views.append(cardview)
             offset -= 50
         }
+        self.view.addSubview(popUp)
+        popUp.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            popUp.topAnchor.constraint(equalTo: self.view.topAnchor),
+            popUp.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            popUp.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            popUp.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+        ])
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -227,4 +247,12 @@ extension CardStackViewController: SFSymbolsButtonDelegate {
         navigationController?.pushViewController(instructionView, animated: true)
     }
 
+}
+
+
+extension CardStackViewController: PopupDelegate {
+    func didUserTapButton() {
+       let playView = FirstCardViewController()
+       navigationController?.pushViewController(playView, animated: false)
+    }
 }

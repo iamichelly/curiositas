@@ -16,7 +16,6 @@ class CardTeamOne: UIView {
 //    let cardComponent: CardView
     let closeButtonContainer: UIView = {
         let container = UIView()
-        //container.backgroundColor = .systemBlue
         return container
     }()
     
@@ -123,10 +122,9 @@ class CardTeamOne: UIView {
         setupViewHierarchy()
         setupConstraints()
         createShape()
-        
-
     }
-    
+
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -190,7 +188,9 @@ class CardTeamOne: UIView {
         NSLayoutConstraint.activate([
             
             closeButton.topAnchor.constraint(equalTo: closeButtonContainer.topAnchor, constant: 28),
-            closeButton.trailingAnchor.constraint(equalTo: closeButtonContainer.trailingAnchor, constant: -20)
+            closeButton.trailingAnchor.constraint(equalTo: closeButtonContainer.trailingAnchor, constant: -20),
+            closeButtonContainer.topAnchor.constraint(equalTo: closeButton.topAnchor),
+            closeButtonContainer.bottomAnchor.constraint(equalTo: closeButton.bottomAnchor)
         ])
     
         
@@ -207,8 +207,7 @@ class CardTeamOne: UIView {
             instructionLabel.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor, constant: -30),
             instructionLabel.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor, constant: 30),
             instructionLabel.centerXAnchor.constraint(equalTo: instructionLabelContainer.centerXAnchor),
-            instructionLabel.centerYAnchor.constraint(equalTo: instructionLabelContainer.centerYAnchor)
-            
+            instructionLabel.topAnchor.constraint(equalTo: instructionLabelContainer.topAnchor, constant: 20)
         
         ])
         
