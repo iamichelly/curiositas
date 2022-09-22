@@ -10,8 +10,8 @@ import UIKit
 class ThemesViewController: UIViewController {
 
     let themesView = ThemesView()
-    let teste = PlayScreenView()
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = themesView

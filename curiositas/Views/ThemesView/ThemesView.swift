@@ -10,13 +10,6 @@ import UIKit
 typealias UICollectionViewProtocol = UICollectionViewDataSource & UICollectionViewDelegate
 
 class ThemesView: UIView {
-    
-    let popUp: Popup = {
-        let popup = Popup()
-        let model = PopupViewModel(type: .mediatorPopUp)
-        popup.configure(with: model)
-        return popup
-    }()
 
     let questionButton: SFSymbolsButton = {
         let button = SFSymbolsButton()
@@ -69,9 +62,6 @@ class ThemesView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-        popUp.openPopup()
-
-
     }
     
     required init?(coder: NSCoder) {

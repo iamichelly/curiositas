@@ -9,9 +9,7 @@ import UIKit
 
 extension CardStackView: AnyView {
     
-    func addSubviews() {
-//        self.addSubview(card)
-        
+    func addSubviews() {        
         self.addSubview(titleLabel)
         self.addSubview(questionButton)
         self.addSubview(backButton)
