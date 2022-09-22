@@ -1,17 +1,15 @@
 //
-//  SecondTeamViewController.swift
+//  FirstCardViewController.swift
 //  curiositas
 //
-//  Created by michellyes on 19/09/22.
+//  Created by michellyes on 21/09/22.
 //
 
 import UIKit
 
-class SecondTeamViewController: UIViewController {
-    
-    let secondCardTeam = SecondTeamCard()
-    
+class FirstCardViewController: UIViewController {
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +24,7 @@ class SecondTeamViewController: UIViewController {
         let cardHeight = self.view.safeAreaLayoutGuide.layoutFrame.height - 90
         let cardFrame = CGRect(x: 0, y: 0, width: self.view.frame.width - 60, height: cardHeight).offsetBy(dx: 30, dy: 60)
         
-        let card = CardView(frame: cardFrame, cardNumber: 1, isCardDone: true)
+        let card = CardTeamOne(frame: cardFrame, isCardDone: false)
         card.layer.cornerRadius = 32
         card.center = view.center
         card.frame = card.frame.offsetBy(dx: 0, dy: 30)
@@ -37,12 +35,21 @@ class SecondTeamViewController: UIViewController {
         card.layer.shadowOffset = CGSize(width: 0, height: -4)
         card.isUserInteractionEnabled = true
         card.layer.shadowPath = UIBezierPath(rect: card.bounds).cgPath
+        card.playButton.addTarget(self, action: #selector(didUserTapPlayButton), for: .touchUpInside)
         return card
     }
+    
+    @objc func didUserTapPlayButton(card: UIView) {
+
+        let playView = SecondCardViewController()
+        navigationController?.pushViewController(playView, animated: false)
+    }
+    
     
     func addCard(offset: CGFloat, dataForVC: AnyObject?) -> UIView {
         let card = createCard(offset: offset)
         self.view.addSubview(card)
         return card
     }
+    
 }

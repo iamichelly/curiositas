@@ -82,14 +82,11 @@
 		0DDBDDC428D4CF1E00DB3C29 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDC328D4CF1E00DB3C29 /* TextConstants.swift */; };
 		0DDBDDC828D50F3500DB3C29 /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDC728D50F3500DB3C29 /* CardGame.swift */; };
 		0DDBDDCB28D55F1100DB3C29 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDBDDCA28D55F1100DB3C29 /* Checkbox.swift */; };
-		943B4C1B28D504A700C140E7 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4C1A28D504A700C140E7 /* PlayScreenViewController.swift */; };
-		943B4C1D28D504B800C140E7 /* PlayScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4C1C28D504B800C140E7 /* PlayScreenView.swift */; };
 		943B4C1F28D5064F00C140E7 /* NumbersConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4C1E28D5064F00C140E7 /* NumbersConstants.swift */; };
-		943B4C2328D513AE00C140E7 /* SecondTeamCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4C2228D513AE00C140E7 /* SecondTeamCard.swift */; };
-		944B001928DB89DC002284A6 /* CardTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944B001828DB89DC002284A6 /* CardTestView.swift */; };
-		94CF1E3A28D8F44900CAE495 /* FirstTeamCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF1E3928D8F44900CAE495 /* FirstTeamCard.swift */; };
-		94CF1E3C28D8F9A100CAE495 /* FirstTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF1E3B28D8F9A100CAE495 /* FirstTeamViewController.swift */; };
-		94CF1E3E28D8FD6B00CAE495 /* SecondTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF1E3D28D8FD6B00CAE495 /* SecondTeamViewController.swift */; };
+		943D324328DBE29800426B96 /* FirstCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324228DBE29800426B96 /* FirstCardViewController.swift */; };
+		943D324528DBE2A600426B96 /* SecondCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324428DBE2A600426B96 /* SecondCardViewController.swift */; };
+		943D324728DBE2BF00426B96 /* CardTeamOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324628DBE2BF00426B96 /* CardTeamOne.swift */; };
+		943D324928DBE2D100426B96 /* CardTeamTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324828DBE2D100426B96 /* CardTeamTwo.swift */; };
 		BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875228D24C7100E34699 /* ThemesViewController.swift */; };
 		BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875428D24CA100E34699 /* ThemesView.swift */; };
 		BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */; };
@@ -195,14 +192,11 @@
 		0DDBDDC328D4CF1E00DB3C29 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
 		0DDBDDC728D50F3500DB3C29 /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
 		0DDBDDCA28D55F1100DB3C29 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
-		943B4C1A28D504A700C140E7 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewController.swift; sourceTree = "<group>"; };
-		943B4C1C28D504B800C140E7 /* PlayScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenView.swift; sourceTree = "<group>"; };
 		943B4C1E28D5064F00C140E7 /* NumbersConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersConstants.swift; sourceTree = "<group>"; };
-		943B4C2228D513AE00C140E7 /* SecondTeamCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTeamCard.swift; sourceTree = "<group>"; };
-		944B001828DB89DC002284A6 /* CardTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTestView.swift; sourceTree = "<group>"; };
-		94CF1E3928D8F44900CAE495 /* FirstTeamCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamCard.swift; sourceTree = "<group>"; };
-		94CF1E3B28D8F9A100CAE495 /* FirstTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeamViewController.swift; sourceTree = "<group>"; };
-		94CF1E3D28D8FD6B00CAE495 /* SecondTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTeamViewController.swift; sourceTree = "<group>"; };
+		943D324228DBE29800426B96 /* FirstCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCardViewController.swift; sourceTree = "<group>"; };
+		943D324428DBE2A600426B96 /* SecondCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardViewController.swift; sourceTree = "<group>"; };
+		943D324628DBE2BF00426B96 /* CardTeamOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamOne.swift; sourceTree = "<group>"; };
+		943D324828DBE2D100426B96 /* CardTeamTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamTwo.swift; sourceTree = "<group>"; };
 		BF6D875228D24C7100E34699 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF6D875428D24CA100E34699 /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
 		BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemesView+AnyView.swift"; sourceTree = "<group>"; };
@@ -245,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				0D28527C28D106DF00BFF734 /* PlayViewController.swift */,
+				943D324228DBE29800426B96 /* FirstCardViewController.swift */,
+				943D324428DBE2A600426B96 /* SecondCardViewController.swift */,
 			);
 			path = PlayView;
 			sourceTree = "<group>";
@@ -462,7 +458,6 @@
 		0DC3656F28CFBBC6004350E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				943B4C1928D5047400C140E7 /* PlayScreenView */,
 				EB8D47E228D2460A00648865 /* CardStackView */,
 				BF6D876728D3B9D100E34699 /* TestView */,
 				BF6D876128D3808300E34699 /* Cells */,
@@ -567,20 +562,6 @@
 			path = Checkbox;
 			sourceTree = "<group>";
 		};
-		943B4C1928D5047400C140E7 /* PlayScreenView */ = {
-			isa = PBXGroup;
-			children = (
-				943B4C1A28D504A700C140E7 /* PlayScreenViewController.swift */,
-				943B4C1C28D504B800C140E7 /* PlayScreenView.swift */,
-				94CF1E3B28D8F9A100CAE495 /* FirstTeamViewController.swift */,
-				94CF1E3928D8F44900CAE495 /* FirstTeamCard.swift */,
-				94CF1E3D28D8FD6B00CAE495 /* SecondTeamViewController.swift */,
-				943B4C2228D513AE00C140E7 /* SecondTeamCard.swift */,
-				944B001828DB89DC002284A6 /* CardTestView.swift */,
-			);
-			path = PlayScreenView;
-			sourceTree = "<group>";
-		};
 		BF6D875128D24C4800E34699 /* ThemesView */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +645,8 @@
 			isa = PBXGroup;
 			children = (
 				EB8D47E928D24F5000648865 /* Card.swift */,
+				943D324628DBE2BF00426B96 /* CardTeamOne.swift */,
+				943D324828DBE2D100426B96 /* CardTeamTwo.swift */,
 				EB8D47ED28DB832500648865 /* CardFinal.swift */,
 			);
 			path = Card;
@@ -753,14 +736,12 @@
 				0D66346528D2EDE300356CDB /* StartPlayActions.swift in Sources */,
 				0D66341F28D14A8100356CDB /* UIFont+.swift in Sources */,
 				0DDBDDC828D50F3500DB3C29 /* CardGame.swift in Sources */,
-				944B001928DB89DC002284A6 /* CardTestView.swift in Sources */,
+				943D324928DBE2D100426B96 /* CardTeamTwo.swift in Sources */,
 				BF6D875B28D2626600E34699 /* ThemesViewController+UICollectionView.swift in Sources */,
-				94CF1E3E28D8FD6B00CAE495 /* SecondTeamViewController.swift in Sources */,
 				0D66344628D2DE5100356CDB /* CallFriendsView.swift in Sources */,
 				0D9A3B4C28D6346D00FE4FF7 /* YellowTitle.swift in Sources */,
 				0D9A3B7B28D953A700FE4FF7 /* TitleOrSubtitleType.swift in Sources */,
 				0D66346928D2F5BA00356CDB /* StartPlayActions+AnyView.swift in Sources */,
-				943B4C2328D513AE00C140E7 /* SecondTeamCard.swift in Sources */,
 				0D9A3B6E28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift in Sources */,
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
@@ -768,7 +749,6 @@
 				BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */,
 				BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */,
 				0D28527D28D106DF00BFF734 /* PlayViewController.swift in Sources */,
-				943B4C1B28D504A700C140E7 /* PlayScreenViewController.swift in Sources */,
 				0D9A3B6C28D78B8F00FE4FF7 /* OneWordCarousel.swift in Sources */,
 				BF6D878828D9441500E34699 /* PopUpAnimation.swift in Sources */,
 				0DDBDDB328D3986400DB3C29 /* Int+.swift in Sources */,
@@ -788,6 +768,7 @@
 				0DDBDDBC28D3EE5C00DB3C29 /* InstructionView.swift in Sources */,
 				0D9A3B7F28D9590400FE4FF7 /* InstructionView+AnyView.swift in Sources */,
 				0D66346028D2EB5C00356CDB /* StartPlayView+AnyView.swift in Sources */,
+				943D324528DBE2A600426B96 /* SecondCardViewController.swift in Sources */,
 				0D66342728D15E5A00356CDB /* MeetCuriositasViewController.swift in Sources */,
 				0D66342928D15E9E00356CDB /* MeetCuriositasView.swift in Sources */,
 				0D66343F28D2C0C700356CDB /* MeetCuriositasInformation.swift in Sources */,
@@ -805,17 +786,18 @@
 				BF6D876428D3818100E34699 /* ThemeCell.swift in Sources */,
 				0D9A3B6728D7867200FE4FF7 /* CheckboxDelegate.swift in Sources */,
 				0DC3655228CFB9A2004350E2 /* AppDelegate.swift in Sources */,
+				943D324728DBE2BF00426B96 /* CardTeamOne.swift in Sources */,
 				0D66346328D2ECB200356CDB /* StartPlayInformation.swift in Sources */,
 				0DD5526D28D03435001FABCA /* ColorConstants.swift in Sources */,
 				0D9A3B7D28D953F500FE4FF7 /* TitleOrSubtitleModel.swift in Sources */,
 				BF6D875D28D3776200E34699 /* ThemesConstants.swift in Sources */,
-				94CF1E3A28D8F44900CAE495 /* FirstTeamCard.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
 				BF6D876928D3B9E700E34699 /* TestViewController.swift in Sources */,
 				BF6D876028D377C700E34699 /* ThemeModel.swift in Sources */,
 				0D66342128D1589100356CDB /* CuriositasTitleType.swift in Sources */,
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
+				943D324328DBE29800426B96 /* FirstCardViewController.swift in Sources */,
 				EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */,
 				EB8D47EA28D24F5000648865 /* Card.swift in Sources */,
 				EB8D47EE28DB832500648865 /* CardFinal.swift in Sources */,
@@ -831,7 +813,6 @@
 				0D66345028D2E4B300356CDB /* LearningCuriositasView.swift in Sources */,
 				0D28528628D13C6A00BFF734 /* CuriositasButtonType.swift in Sources */,
 				0DC3656C28CFBB41004350E2 /* UIViewController+Preview.swift in Sources */,
-				94CF1E3C28D8F9A100CAE495 /* FirstTeamViewController.swift in Sources */,
 				0DDBDDB728D3EDCB00DB3C29 /* LearningCuriositasLogo+AnyView.swift in Sources */,
 				0D66344428D2DDD400356CDB /* CallFriendsViewController.swift in Sources */,
 				943B4C1F28D5064F00C140E7 /* NumbersConstants.swift in Sources */,
@@ -841,7 +822,6 @@
 				0DDBDDC428D4CF1E00DB3C29 /* TextConstants.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
 				0DC3655428CFB9A2004350E2 /* SceneDelegate.swift in Sources */,
-				943B4C1D28D504B800C140E7 /* PlayScreenView.swift in Sources */,
 				BF6D877428D4B5A700E34699 /* SFSymbolsButtonDelegate.swift in Sources */,
 				0D9A3B6328D675F100FE4FF7 /* CardGame+AnyView.swift in Sources */,
 				BF6D878228D8F0A200E34699 /* PopUp+AnyView.swift in Sources */,
