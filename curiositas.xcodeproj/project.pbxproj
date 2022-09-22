@@ -87,6 +87,7 @@
 		943D324528DBE2A600426B96 /* SecondCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324428DBE2A600426B96 /* SecondCardViewController.swift */; };
 		943D324728DBE2BF00426B96 /* CardTeamOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324628DBE2BF00426B96 /* CardTeamOne.swift */; };
 		943D324928DBE2D100426B96 /* CardTeamTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324828DBE2D100426B96 /* CardTeamTwo.swift */; };
+		943D324B28DBE69C00426B96 /* AnotherCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D324A28DBE69C00426B96 /* AnotherCardView.swift */; };
 		BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875228D24C7100E34699 /* ThemesViewController.swift */; };
 		BF6D875528D24CA100E34699 /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875428D24CA100E34699 /* ThemesView.swift */; };
 		BF6D875928D2559100E34699 /* ThemesView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */; };
@@ -197,6 +198,7 @@
 		943D324428DBE2A600426B96 /* SecondCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardViewController.swift; sourceTree = "<group>"; };
 		943D324628DBE2BF00426B96 /* CardTeamOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamOne.swift; sourceTree = "<group>"; };
 		943D324828DBE2D100426B96 /* CardTeamTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTeamTwo.swift; sourceTree = "<group>"; };
+		943D324A28DBE69C00426B96 /* AnotherCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCardView.swift; sourceTree = "<group>"; };
 		BF6D875228D24C7100E34699 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		BF6D875428D24CA100E34699 /* ThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
 		BF6D875828D2559100E34699 /* ThemesView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemesView+AnyView.swift"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				0D28527C28D106DF00BFF734 /* PlayViewController.swift */,
 				943D324228DBE29800426B96 /* FirstCardViewController.swift */,
 				943D324428DBE2A600426B96 /* SecondCardViewController.swift */,
+				943D324A28DBE69C00426B96 /* AnotherCardView.swift */,
 			);
 			path = PlayView;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 				0D9A3B6E28D7B22100FE4FF7 /* CardGame+OneWordCarouselDataSource.swift in Sources */,
 				0D66345228D2E4C300356CDB /* LearningCuriositasView+AnyView.swift in Sources */,
 				0DC3655628CFB9A2004350E2 /* HomeViewController.swift in Sources */,
+				943D324B28DBE69C00426B96 /* AnotherCardView.swift in Sources */,
 				BF6D877628D4B5EF00E34699 /* SFSymbolsButton+AnyView.swift in Sources */,
 				BF6D878628D93BA800E34699 /* PopUpType.swift in Sources */,
 				BF6D878428D8F2D100E34699 /* PopupViewModel.swift in Sources */,

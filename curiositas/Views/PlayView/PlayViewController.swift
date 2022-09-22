@@ -10,9 +10,11 @@ import UIKit
 class PlayViewController: UIViewController {
     
     let card = CardGame()
+    let questionView = AnotherCardView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view = questionView
         view.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         card.delegate = self
         addSubviews()

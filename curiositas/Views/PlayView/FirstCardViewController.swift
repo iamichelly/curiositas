@@ -9,6 +9,7 @@ import UIKit
 
 class FirstCardViewController: UIViewController {
 
+    let questionView = AnotherCardView()
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +17,7 @@ class FirstCardViewController: UIViewController {
     }
   
     override func viewDidAppear(_ animated: Bool) {
+        view = questionView
         view.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         addCard(offset: 60, dataForVC: nil)
     }
