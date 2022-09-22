@@ -114,6 +114,7 @@
 		EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47E528D2462900648865 /* CardStackViewController.swift */; };
 		EB8D47EA28D24F5000648865 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47E928D24F5000648865 /* Card.swift */; };
 		EB8D47EC28D25F2E00648865 /* CardStackView+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47EB28D25F2E00648865 /* CardStackView+AnyView.swift */; };
+		EB8D47EE28DB832500648865 /* CardFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8D47ED28DB832500648865 /* CardFinal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +227,7 @@
 		EB8D47E528D2462900648865 /* CardStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackViewController.swift; sourceTree = "<group>"; };
 		EB8D47E928D24F5000648865 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		EB8D47EB28D25F2E00648865 /* CardStackView+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardStackView+AnyView.swift"; sourceTree = "<group>"; };
+		EB8D47ED28DB832500648865 /* CardFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFinal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -662,6 +664,7 @@
 			isa = PBXGroup;
 			children = (
 				EB8D47E928D24F5000648865 /* Card.swift */,
+				EB8D47ED28DB832500648865 /* CardFinal.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -815,6 +818,7 @@
 				0DC3657628CFBFC0004350E2 /* HomeView.swift in Sources */,
 				EB8D47E628D2462900648865 /* CardStackViewController.swift in Sources */,
 				EB8D47EA28D24F5000648865 /* Card.swift in Sources */,
+				EB8D47EE28DB832500648865 /* CardFinal.swift in Sources */,
 				BF6D875328D24C7100E34699 /* ThemesViewController.swift in Sources */,
 				0D9A3B5B28D6701E00FE4FF7 /* TopCardGameContainer.swift in Sources */,
 				0DC3656A28CFBB0E004350E2 /* UIView+Preview.swift in Sources */,
@@ -986,7 +990,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9FWLTGWA8V;
+				DEVELOPMENT_TEAM = 4UVYB4V5UN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = curiositas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

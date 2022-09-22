@@ -39,7 +39,19 @@ extension StartPlayActions: AnyView {
             logo.widthAnchor.constraint(equalToConstant: 110.HAdapted),
             logo.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
+    }
     
+    func setupAdditionalConfiguration() {
+        playButton.addTarget(self, action: #selector(didTapPlayButton), for: .touchUpInside)
+        instructionButton.addTarget(self, action: #selector(didTapInstructionButton), for: .touchUpInside)
+    }
+    
+    @objc func didTapPlayButton(){
+        delegate?.didUserTapButton()
+    }
+    
+    @objc func didTapInstructionButton(){
+        delegate?.didUserTapOntherButton()
     }
 
 }

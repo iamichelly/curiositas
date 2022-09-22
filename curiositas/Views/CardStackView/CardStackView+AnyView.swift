@@ -11,16 +11,35 @@ extension CardStackView: AnyView {
     
     func addSubviews() {
 //        self.addSubview(card)
+        
+        self.addSubview(titleLabel)
+        self.addSubview(questionButton)
+        self.addSubview(backButton)
+
     }
     
     func setupConstraints() {
-//        card.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            card.topAnchor.constraint(equalTo: topAnchor, constant: 130),
-//            card.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-//            card.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 32),
-//            card.bottomAnchor.constraint(equalTo: bottomAnchor)
-//        ])
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        questionButton.translatesAutoresizingMaskIntoConstraints = false
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: questionButton.bottomAnchor, constant: -6),
+            titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            questionButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            questionButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
+        ])
+        
+        NSLayoutConstraint.activate([
+            backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
+            backButton.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor)
+
+        ])
+        
+        
     }
 }
 

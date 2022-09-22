@@ -47,6 +47,7 @@ class OnboardingViewController: UIPageViewController {
     @objc func didTapJumpOnboarding(){
         jumpOnboardingLabel.isHidden = true
         pageControl.isHidden = true
+        OnboardingManager.shared.userHasSeenOnboarding()
         let home = HomeViewController()
         setViewControllers([home], direction: .forward, animated: true)
     }
