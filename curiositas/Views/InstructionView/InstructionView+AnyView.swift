@@ -33,7 +33,7 @@ extension InstructionView: AnyView {
     }
     
     func setupAdditionalConfiguration() {
-        self.backgroundColor = UIColor(named: ColorConstants.shared.PRIMARY_COLOR)
+        self.backgroundColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         self.showsVerticalScrollIndicator = false
     }
 }

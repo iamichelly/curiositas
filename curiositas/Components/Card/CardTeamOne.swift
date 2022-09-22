@@ -77,16 +77,15 @@ class CardTeamOne: UIView {
         return button
     }()
     
-    let instructionLabel: UILabel = {
-        let instruction = UILabel()
-        instruction.text = "Mostre essa carta para o time 1"
-        instruction.textColor = .yellow
-        instruction.font = .rounded(ofSize: 28, weight: .heavy)
-        instruction.numberOfLines = 0
-        instruction.sizeToFit()
-        instruction.textAlignment = .center
-        return instruction
+    let instructionLabel: YellowTitle = {
+        let yellowTitle = YellowTitle(withText: .firstGroup)
+        yellowTitle.numberOfLines = 0
+        yellowTitle.sizeToFit()
+        yellowTitle.textAlignment = .center
+        yellowTitle.font = .rounded(ofSize: 26, weight: .heavy)
+        return yellowTitle
     }()
+
     
     let keyWordLabel: UILabel = {
         let keyWord = UILabel()
@@ -199,7 +198,7 @@ class CardTeamOne: UIView {
             instructionLabelContainer.topAnchor.constraint(equalTo: closeButtonContainer.bottomAnchor),
             instructionLabelContainer.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
             instructionLabelContainer.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
-            instructionLabelContainer.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor, constant: -450)
+            instructionLabelContainer.bottomAnchor.constraint(equalTo: instructionLabel.bottomAnchor)
         ])
         
         instructionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -216,14 +215,15 @@ class CardTeamOne: UIView {
             keyWordLabelContainer.topAnchor.constraint(equalTo: instructionLabelContainer.bottomAnchor),
             keyWordLabelContainer.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
             keyWordLabelContainer.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
-            keyWordLabelContainer.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor, constant: -350)
+            keyWordLabelContainer.bottomAnchor.constraint(equalTo: keyWordLabel.bottomAnchor)
         
         ])
         
         keyWordLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            keyWordLabel.centerXAnchor.constraint(equalTo: keyWordLabelContainer.centerXAnchor),
-            keyWordLabel.centerYAnchor.constraint(equalTo: keyWordLabelContainer.centerYAnchor)
+            keyWordLabel.topAnchor.constraint(equalTo: keyWordLabelContainer.topAnchor),
+            keyWordLabel.centerXAnchor.constraint(equalTo: keyWordLabelContainer.centerXAnchor)
+        
         ])
         
         cardImageContainer.translatesAutoresizingMaskIntoConstraints = false

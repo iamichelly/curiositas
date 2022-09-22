@@ -12,7 +12,7 @@ class CardGame: UIView {
     let topCardGameContainer = TopCardGameContainer()
     let bottomCardGameContainer = BottomCardGameContainer()
     
-    let tips: [String] = ["teste1", "teste2", "teste3"]
+    let tips: [String] = ["Maior", "Quente", "Planeta"]
     var tipIndex = 0
     
     weak var delegate: CheckboxDelegate? {

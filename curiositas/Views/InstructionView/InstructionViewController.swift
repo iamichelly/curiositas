@@ -20,7 +20,7 @@ class InstructionViewController: UIViewController {
     }
     
     func setupAdditionalConfiguration(){
-        navigationController?.navigationBar.barTintColor = UIColor(named: ColorConstants.shared.PRIMARY_COLOR)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.13, green: 0.08, blue: 0.30, alpha: 1.00)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor(named: ColorConstants.shared.PRIMARY_COLOR) ?? .black]
     }

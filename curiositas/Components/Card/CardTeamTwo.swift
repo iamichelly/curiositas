@@ -75,17 +75,15 @@ class CardTeamTwo: UIView {
         return button
     }()
     
-    let instructionLabel: UILabel = {
-        let instruction = UILabel()
-        instruction.text = "Mostre essa carta para o time 2"
-        instruction.textColor = .yellow
-        instruction.font = .rounded(ofSize: 28, weight: .heavy)
-        instruction.numberOfLines = 0
-        instruction.sizeToFit()
-        instruction.textAlignment = .center
-        return instruction
+    let instructionLabel: YellowTitle = {
+        let yellowTitle = YellowTitle(withText: .secondGroup)
+        yellowTitle.numberOfLines = 0
+        yellowTitle.sizeToFit()
+        yellowTitle.textAlignment = .center
+        yellowTitle.font = .rounded(ofSize: 26, weight: .heavy)
+        return yellowTitle
     }()
-    
+
     let keyWordLabel: UILabel = {
         let keyWord = UILabel()
         keyWord.text = "Marte"
@@ -202,7 +200,7 @@ class CardTeamTwo: UIView {
             instructionLabelContainer.topAnchor.constraint(equalTo: closeButtonContainer.bottomAnchor),
             instructionLabelContainer.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
             instructionLabelContainer.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
-            instructionLabelContainer.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor, constant: -450)
+            instructionLabelContainer.bottomAnchor.constraint(equalTo: instructionLabel.bottomAnchor)
         ])
         
         instructionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -210,7 +208,7 @@ class CardTeamTwo: UIView {
             instructionLabel.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor, constant: -30),
             instructionLabel.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor, constant: 30),
             instructionLabel.centerXAnchor.constraint(equalTo: instructionLabelContainer.centerXAnchor),
-            instructionLabel.topAnchor.constraint(equalTo: instructionLabelContainer.topAnchor, constant: 20)            
+            instructionLabel.topAnchor.constraint(equalTo: instructionLabelContainer.topAnchor, constant: 20)
         
         ])
         
@@ -219,14 +217,15 @@ class CardTeamTwo: UIView {
             keyWordLabelContainer.topAnchor.constraint(equalTo: instructionLabelContainer.bottomAnchor),
             keyWordLabelContainer.leadingAnchor.constraint(equalTo: cardStackView.leadingAnchor),
             keyWordLabelContainer.trailingAnchor.constraint(equalTo: cardStackView.trailingAnchor),
-            keyWordLabelContainer.bottomAnchor.constraint(equalTo: cardStackView.bottomAnchor, constant: -350)
+            keyWordLabelContainer.bottomAnchor.constraint(equalTo: keyWordLabel.bottomAnchor)
         
         ])
         
         keyWordLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            keyWordLabel.centerXAnchor.constraint(equalTo: keyWordLabelContainer.centerXAnchor),
-            keyWordLabel.centerYAnchor.constraint(equalTo: keyWordLabelContainer.centerYAnchor)
+            keyWordLabel.topAnchor.constraint(equalTo: keyWordLabelContainer.topAnchor),
+            keyWordLabel.centerXAnchor.constraint(equalTo: keyWordLabelContainer.centerXAnchor)
+        
         ])
         
         cardImageContainer.translatesAutoresizingMaskIntoConstraints = false
